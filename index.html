@@ -1,32 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Ropa+Sans&family=Rosario:wght@700&family=Ruda&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css1/override.css">
     <title>Know The Culture</title>
+
 </head>
+
 <body>
 
     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white pt-4 pb-2 navbar-light">
+        <div class="container-lg d-flex">
+            <div class="test">
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="assets/images/ktc logo.png" alt="" >
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-1">
+                    <li class="nav-item mx-4 active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">Collection</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" aria-current="page" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <!--     
+
     <header>
-        <img src="assets/images/ktc logo.png" alt="" />
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Collection</li>
-                <li>Shop</li>
-                <li>About</li>
-                <li>Cart</li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="assets/images/ktc logo.png" alt="" />
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Collection</li>
+                    <li>Shop</li>
+                    <li>About</li>
+                    <li>Cart</li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
-    <!-- Showcase -->
     <section>
-        <div>
+        <div class="container">
             <div>
                 <h1>Know The Culture</h1>
                 <p>A lifestyle brand that brings unity through different waves fo culture.</p>
@@ -38,24 +95,25 @@
         </div>
     </section>
 
-    <!-- Know our brand -->
     <section>
-        <div>
+        <div class="container">
             <img src="assets/images/know our brand.jpg" alt="">
             <div>
                 <h1>Know our brand.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae ex culpa voluptate atque ratione rem eius ipsa natus esse similique porro quas ad praesentium, ea, corporis enim sed? Ab?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae ex culpa voluptate atque
+                    ratione rem eius ipsa natus esse similique porro quas ad praesentium, ea, corporis enim sed? Ab?</p>
                 <button>Read More</button>
             </div>
         </div>
     </section>
 
-    <!-- Collection -->
-    <section>
-        <div>
+    <section class="bg-light-200">
+        <div class="container">
             <div>
                 <h1>Dashy and Stylish.</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio corrupti dolor numquam consequatur! Delectus perspiciatis pariatur quisquam quasi officia, officiis amet perferendis illo quibusdam adipisci quod nisi, sint commodi quaerat!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio corrupti dolor numquam consequatur!
+                    Delectus perspiciatis pariatur quisquam quasi officia, officiis amet perferendis illo quibusdam
+                    adipisci quod nisi, sint commodi quaerat!</p>
                 <button>Discover More</button>
             </div>
             <div>
@@ -63,7 +121,7 @@
                     <img src="assets/images/collection_1.jpg" alt="">
                 </div>
                 <div>
-                    <img src="assets/images/collection_2.jpg" alt="">
+                    <img src="assets/images/collection_5.jpg" alt="">
                 </div>
                 <div>
                     <img src="assets/images/collection_3.jpg" alt="">
@@ -72,19 +130,17 @@
                     <img src="assets/images/collection_4.jpg" alt="">
                 </div>
                 <div>
-                    <img src="assets/images/collection_5.
-                    jpg" alt="">
+                    <img src="assets/images/collection_5.jpg" alt="">
                 </div>
                 <div>
-                    <img src="assets/images/collection_6.jpg" alt="">
+                    <img src="assets/images/collection_1.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Shop -->
     <section>
-        <div>
+        <div class="container">
             <div>
                 <div>
                     <img src="assets/images/b_front.jpg" alt="">
@@ -101,24 +157,24 @@
             </div>
             <div>
                 <h1>Check what's new.</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat natus velit voluptates sed voluptatem autem itaque fugit eveniet laboriosam perspiciatis!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat natus velit voluptates sed
+                    voluptatem autem itaque fugit eveniet laboriosam perspiciatis!</p>
                 <button>Go to Shop</button>
             </div>
         </div>
     </section>
 
-    <!-- End Showcase -->
     <section>
-        <div>
+        <div class="container">
             <h1>Don't get left behind.</h1>
             <h1>Know The Culture.</h1>
             <button>Shop Now</button>
         </div>
     </section>
 
-    <!-- Footer -->
-    <section>
-        <div>
+    
+    <section class="bg-dark-200 text-light-500">
+        <div class="container">
             <img src="assets/images/circle logo 181818.png" alt="">
             <p>Know The culture</p>
             <div>
@@ -130,8 +186,10 @@
             </div>
         </div>
     </section>
+ -->
 
 
-    
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>
