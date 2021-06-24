@@ -116,7 +116,6 @@ body::before {
     flex-grow: 0;
 }
 
-
 li {
     font-family: 'Ropa Sans', 'sans-serif';
 }
@@ -138,9 +137,22 @@ li {
 }
 
 .showcase-landing {
-    background-image: url("/assets/images/landing page.png");
+    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("/assets/images/other page.jpg");
+    background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+.my-banner {
+    width: 100%;
+    height: 100%;
+    /* background-image: url("/assets/images/other page.jpg"); */
+    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("/assets/images/other page.jpg");
+    background-size: cover;
+}
+
+footer {
+    background: #181818;
 }
 
 .p-landing {
@@ -179,6 +191,34 @@ h1 {
     border-color: rgba(0,0,0,0);
 }
 
+.my-flex-landing-shop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25em;
+}
+
+.my-flex-landing-shop > * {
+    flex: 1 1 45%;
+}
+
+.my-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25em;
+}
+
+.my-flex > * {
+    flex: 1 1 33%;
+}
+
+
+.banner-parent-button {
+    display: flex;
+}
+
+.banner-parent-button .btn {
+    flex: 1;
+}
 
 
 /* small */
@@ -210,12 +250,30 @@ h1 {
         width: auto;
         margin: 2px;
     }
+
+    .my-flex-landing-shop {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25em;
+    }
+    
+    .my-flex-landing-shop > * {
+        flex: 1 1 47%;
+    }
+
+
 }
 
 /* medium */
 @media (min-width: 768px) {
     h1 {
         font-size: 3.563rem;
+    }
+
+    .showcase-landing {
+        max-width: 100%;
+        background-image: url("/assets/images/landing page1.png");
+        background-size: cover;
     }
 
     #landing_image {
@@ -244,7 +302,20 @@ h1 {
     .my-flex > * {
         flex: 1 1 30%;
     }
+
+    .my-flex-landing-shop {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25em;
+    }
     
+    .my-flex-landing-shop > * {
+        flex: 1 1 40%;
+    }
+
+    .footer-p {
+        font-size: 1.75rem;
+    }
 
 }
 
@@ -264,6 +335,7 @@ h1 {
     .showcase-landing {
         max-width: 100%;
         background-image: url("/assets/images/landing page1.png");
+        background-size: cover;
     }
 
     #landing_image {
@@ -292,6 +364,22 @@ h1 {
     .my-flex > * {
         flex: 1 1 40%;
     }
+
+    .my-flex-landing-shop {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25em;
+    }
+    
+    .my-flex-landing-shop > * {
+        flex: 1 1 46%;
+    }
+
+    .footer-logo {
+        max-width: 30%;
+        max-height: 30%;
+    }
+
     
 }
 
@@ -310,6 +398,21 @@ h1 {
     .my-flex > * {
         flex: 1 1 30%;
     }
+
+    .my-flex-landing-shop {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25em;
+    }
     
+    .my-flex-landing-shop > * {
+        flex: 1 1 47%;
+    }
+    
+    .banner-flex {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 39rem;
+    }
 }
 
