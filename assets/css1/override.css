@@ -246,6 +246,22 @@ h1 {
     letter-spacing: 0.2rem;
 }
 
+.image-changer {
+    position: relative;
+    display: inline-block;
+}
+
+.image-changer .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-changer:hover .img-top {
+    display: inline;
+}
+
 
 /* small */
 @media (min-width: 576px) {
