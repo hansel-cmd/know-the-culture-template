@@ -1,0 +1,32 @@
+#navbarTogglerDemo02 {
+    flex-grow: 0;
+}
+
+li {
+    font-family: 'Ropa Sans', 'sans-serif';
+}
+
+.active {
+    border-bottom: 4px #181818 solid;
+}
+
+.navbar {
+    box-shadow: 0 0.5px 0px 0 #C7C7C7;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.test {
+    max-width: 50%;
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .img-responsive {
+        width: 50%;
+    }
+}
+
+
