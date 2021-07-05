@@ -142,14 +142,14 @@ li {
 
 
 .showcase-landing {
-    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("/assets/images/other page.jpg");
+    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("../../assets/images/other page.jpg");
     background-size: cover;
     height: 100%;
     width: 100%;
 }
 
 .about-landing {
-    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("/assets/images/other page.jpg");
+    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("../../assets/images/other page.jpg");
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -158,7 +158,7 @@ li {
 .my-banner {
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("/assets/images/other page.jpg");
+    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("../../assets/images/other page.jpg");
     background-size: cover;
 }
 
@@ -312,7 +312,7 @@ h1 {
 
     .showcase-landing {
         max-width: 100%;
-        background-image: url("/assets/images/landing page1.png");
+        background-image: url("../../assets/images/landing page1.png");
         background-size: cover;
     }
 
@@ -396,7 +396,7 @@ h1 {
 
     .showcase-landing {
         max-width: 100%;
-        background-image: url("/assets/images/landing page1.png");
+        background-image: url("../../assets/images/landing page1.png");
         background-size: cover;
     }
 
