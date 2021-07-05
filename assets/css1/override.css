@@ -108,6 +108,22 @@ body::before {
     background-color: #181818  !important;
 }
 
+.hover-towards-light:hover {
+    border-color: var(--clr-dark-200) !important;
+    background-color: #F3F3F3 !important;
+    color: #181818 !important;
+}
+
+.hover-towards-dark:hover {
+    border-color: var(--clr-dark-200) !important;
+    background-color: #181818 !important;
+    color: #F3F3F3 !important;
+}
+
+.my-outline-dark-200 {
+    border-color: var(--clr-dark-200) !important;
+}
+
 .text-justify {
     text-align: justify;
 }
