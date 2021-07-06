@@ -279,28 +279,6 @@ h1 {
     letter-spacing: 0.2rem;
 }
 
-.image-changer {
-    position: relative;
-    display: inline-block;
-}
-
-.image-changer .img-top {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.image-changer:hover .img-top {
-    display: inline;
-}
-
-.my-image {
-    object-fit: cover; 
-    height: 100%;
-    width: 100%;
-}
-
 .my-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -322,6 +300,46 @@ h1 {
 .grid-item-small {
     grid-row: span 2;
     grid-column: span 2;
+}
+
+.image-changer {
+    position: relative;
+    display: inline-block;
+    transition: transform 100ms ease-out;
+}
+
+.image-changer .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-changer:hover .img-top {
+    animation: fadeIn linear 0.5s;
+    display: inline;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    25% {opacity: 0.25}
+    50% {opacity: 0.50}
+    75% {opacity: 0.75}
+    100% {opacity:1;}
+}
+
+.my-image {
+    object-fit: cover; 
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item img, .ease-out-effect {
+    transition: transform 100ms ease;
+}
+
+.grid-item img:hover, .ease-out-effect:hover {
+    transform: scale(1.05);
 }
 
 
