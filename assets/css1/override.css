@@ -302,6 +302,38 @@ h1 {
     grid-column: span 2;
 }
 
+.shop-modal-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.shop-modal-grid-item-left {
+    grid-row: span 1;
+    grid-column: span 1;
+    height: auto;
+}
+
+.shop-modal-grid-item-right {
+    grid-row: span 1;
+    grid-column: span 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+}
+
+.hide-scroll {
+    overflow: auto !important; 
+    scrollbar-width: 0 !important; 
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.hide-scroll::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+
 .image-changer {
     position: relative;
     display: inline-block;
@@ -359,6 +391,22 @@ input[type="checkbox"]:checked {
   filter: brightness(0);
 }
 
+.slide-indicator {
+    border: 1px solid hsl(0, 0%, 9%) !important;
+}
+
+.slide-indicator-active {
+    border: 1px solid hsl(0, 0%, 18%) !important;
+}
+
+.select-width {
+    flex-grow: 0 !important;
+    width: 100%;
+}
+
+.select-qty {
+    flex-grow: 1 !important;
+}
 
 /* small */
 @media (min-width: 576px) {
@@ -438,7 +486,9 @@ input[type="checkbox"]:checked {
         grid-column: span 2;
     }
     
-    
+    .select-width {
+        width: 100%;
+    }
 }
 
 /* medium */
@@ -532,8 +582,11 @@ input[type="checkbox"]:checked {
         grid-column: span 2;
     }
 
-}
+    .select-width {
+        width: 100%;
+    }
 
+}
 
 
 /* large */
@@ -623,7 +676,35 @@ input[type="checkbox"]:checked {
         grid-column: span 2;
     }
 
+    .select-width {
+        width: 50%;
+    }
+
+    .select-qty {
+        width: 25% !important;
+        flex-grow: 0 !important;
+    }
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
     
+    .shop-modal-grid-item-left {
+        grid-row: span 2;
+        grid-column: span 1;
+        height: 95%;
+    }
+    
+    .shop-modal-grid-item-right {
+        grid-row: span 2;
+        grid-column: span 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 75vh;
+    }
 }
 
 /* extra large */
@@ -703,5 +784,35 @@ input[type="checkbox"]:checked {
         grid-column: span 1;
     }
 
+    .select-width {
+        width: 25%;
+    }
+
+    .select-qty {
+        width: 15% !important;
+        flex-grow: 0 !important;
+    }
+
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+    
+    .shop-modal-grid-item-left {
+        grid-row: span 2;
+        grid-column: span 1;
+        height: 95%;
+    }
+    
+    .shop-modal-grid-item-right {
+        grid-row: span 2;
+        grid-column: span 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 75vh;
+    }
 }
 

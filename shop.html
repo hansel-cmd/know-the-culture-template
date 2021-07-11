@@ -134,7 +134,7 @@
             <div class="d-grid justify-content-end align-items-end">
                 <a class="btn text-secondary lead" data-bs-toggle="offcanvas" href="#filter" role="button"
                     aria-controls="filter">
-                    <p class="text-secondary mb-0">
+                    <p class="text-secondary mb-0 fs-5">
                         <span class="me-2"><i class="bi bi-sliders"></i></span>
                         Filters
                     </p>
@@ -154,7 +154,7 @@
             <button type="button" class="btn-close text-reset btn-small" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body hide-scroll">
             <div class="accordion accordion-flush pb-4" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item border-bottom mb-4">
                     <h2 class="accordion-header" id="size_panel_parent">
@@ -414,7 +414,7 @@
         </div>
     </div>
 
-    <!-- Collections -->
+    <!-- Shop Items -->
     <section class="p-5 pb-0">
         <div class=" py-4">
             <div class="my-grid pb-4">
@@ -490,7 +490,7 @@
                         <p class="mb-0 text-primary text-light-700 fs-6 text-center">Php 1,999</p>
                     </div>
                 </div>
-                
+
                 <div class="grid-item grid-item-small flex-column">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100 image-changer">
                         <img class="w-100 my-image" src="assets/images/b_front.jpg" alt="">
@@ -582,7 +582,7 @@
                         <p class="mb-0 text-primary text-light-700 fs-6 text-center">Php 1,999</p>
                     </div>
                 </div>
-                
+
 
 
 
@@ -590,6 +590,176 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Shop Item Modal -->
+    <div class="modal fade" id="collection1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content " style="max-height: 100vh !important;">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body" >
+                    <div class="shop-modal-grid">
+                        <!-- PRODUCT IMAGE -->
+                        <div class=" shop-modal-grid-item-left">
+                            <div id="carouselExampleCaptions" class="carousel slide carousel-dark h-100" data-bs-touch="true">
+                                <div class="carousel-indicators mb-2 hide-scroll">
+                                    <img src="assets/images/b_front.jpg" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="0"
+                                        class="d-block w-25 h-100 active border-1 slide-indicator slide-indicator-active"
+                                        aria-current="true" aria-label="Slide 1" alt="...">
+                                    <img src="assets/images/b_front.jpg" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="1" class="d-block w-25 h-100 slide-indicator"
+                                        aria-label="Slide 2" alt="...">
+                                    <img src="assets/images/b_front.jpg" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="2" class="d-block w-25 h-100 slide-indicator"
+                                        aria-label="Slide 3" alt="...">
+                                </div>
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item active h-100">
+                                        <img src="assets/images/b_front.jpg" class="d-block w-100 h-100 my-image" alt="...">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="assets/images/b_front.jpg" class="d-block w-100 h-100 my-image" alt="...">
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <img src="assets/images/b_front.jpg" class="d-block w-100 h-100 my-image" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                        <!-- PRODUCT INFO -->
+                        <div class=" shop-modal-grid-item-right hide-scroll">
+                            <h3 class="fs-2 text-secondary">
+                                Monogram Fleece Hoodie GRN
+                            </h3>
+                            <p class="text-light-700">Php 3,999.99</p>
+                            <p class="fs-6 text-primary">
+                            <ul class="list-unstyled">
+                                <li class="fs-6 text-primary">Lorem</li>
+                                <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                                <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                                <li class="fs-6 text-primary">Lorem Ipsum</li>
+                                <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                                <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                            </ul>
+                            </p>
+
+                            <!-- SIZING -->
+                            <div>
+                                <label for="size" class="form-label text-secondary text-dark-200">Select Size:</label>
+                                <select id="size" class="form-select mb-3  select-width"
+                                    aria-label=".form-select-lg example">
+                                    <option selected>XX-SMALL</option>
+                                    <option value="1">X-SMALL</option>
+                                    <option value="2">MEDIUM</option>
+                                    <option value="3">LARGE</option>
+                                    <option value="3">X-LARGE</option>
+                                    <option value="3">XX-LARGE</option>
+                                </select>
+                            </div>
+
+                            <!-- QUANTITY -->
+                            <div>
+                                <label for="size" class="form-label text-secondary text-dark-200">Quantity:</label>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled"
+                                        type="button" id="reduce">-</button>
+                                    <input type="text" class="form-control text-center select-qty" aria-describedby=""
+                                        value="0"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                    <button class="btn btn-outline-secondary bg-dark-200 text-light-200" type="button"
+                                        id="add">+</button>
+                                </div>
+                            </div>
+
+
+                            <!-- PRODUCT SIZING DETAIL -->
+                            <div>
+                                <div class="accordion accordion-flush pb-4" id="product_sizing">
+                                    <div class="accordion-item border-bottom mb-4">
+                                        <h2 class="accordion-header" id="product_sizing_button">
+                                            <button class="accordion-button collapsed text-secondary" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#product_sizing_info"
+                                                aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                Product Sizing
+                                            </button>
+                                        </h2>
+                                        <div id="product_sizing_info" class="accordion-collapse collapse"
+                                            aria-labelledby="size_panel">
+                                            <div class="border-bottom">
+                                                <div class="py-2 px-4">
+                                                    <div class="table-responsive">
+                                                        <table class="table text-secondary fs-6">
+                                                            <tr>
+                                                                <td>size (inches)</td>
+                                                                <td>XS</td>
+                                                                <td>S</td>
+                                                                <td>M</td>
+                                                                <td>L</td>
+                                                                <td>XL</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>body length</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>chest</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>sleeve length</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                                <td>24</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row gap-2 p-3">
+                                <a href="" class="btn bg-dark-200 text-light-200 p-3 text-secondary hover-towards-light">BUY NOW</a>
+                                <a href=""
+                                    class="btn bg-light-200 text-dark-200 p-3 text-secondary my-outline-dark-200 hover-towards-dark">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Pagination -->
