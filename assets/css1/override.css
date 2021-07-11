@@ -206,6 +206,14 @@ footer {
     max-width: 39.125rem;
 }
 
+.p-other-page {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.75rem;
+    letter-spacing: 0.10em;
+    max-width: 39.125rem;
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -625,6 +633,10 @@ input[type="checkbox"]:checked {
     }
 
     .p-landing {
+        font-size: 2rem;
+    }
+
+    .p-other-page {
         font-size: 2rem;
     }
 
