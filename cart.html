@@ -19,6 +19,7 @@
 
 <body>
 
+    <!-- Whole Header including sub header -->
     <section class="fixed-top pb-5">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-white pt-md-4 pb-2 navbar-light  d-lg-block d-none">
@@ -98,6 +99,7 @@
 
         </nav>
 
+        <!-- Sub Header -->
         <section class="px-4 pt-5 p-lg-0 bg-white">
             <div class="container pt-5 border-bottom">
                 <h3 class="text-end text-md-end text-secondary pb-lg-5">
@@ -125,8 +127,8 @@
     </section>
 
 
-
-    <section class="px-4 py-5 p-lg-0 cart-padding">
+    <!-- Cart Items -->
+    <section class="px-4 py-5 pb-0 p-lg-0 pt-lg-5 cart-padding">
         <div class="container py-3">
             <!-- first item -->
             <div class="row flex-wrap d-flex border-bottom mb-4">
@@ -140,20 +142,21 @@
                     <p class="fs-5 text-secondary mb-0">Lorem Ipsum Shirt</p>
                     <p class="fs-6 text-secondary mb-0 text-light-700">₱ 1,999</p>
                     <p class="fs-6 text-primary">
-                        <ul class="list-unstyled d-none d-md-block">
-                            <li class="fs-6 text-primary">Lorem</li>
-                            <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                            <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
-                            <li class="fs-6 text-primary">Lorem Ipsum</li>
-                            <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                            <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
-                        </ul>
-                        </p>
+                    <ul class="list-unstyled d-none d-md-block">
+                        <li class="fs-6 text-primary">Lorem</li>
+                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                        <li class="fs-6 text-primary">Lorem Ipsum</li>
+                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                    </ul>
+                    </p>
                 </div>
                 <div class="col-md-6 col-4 d-flex flex-column flex-lg-row justify-content-center p-0">
                     <!-- Size -->
                     <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                        <select id="size" class="form-select mb-3 cart-select-width" aria-label=".form-select-lg example">
+                        <select id="size" class="form-select mb-3 cart-select-width"
+                            aria-label=".form-select-lg example">
                             <option selected value="xxs">XXS</option>
                             <option value="xs">XS</option>
                             <option value="m">M</option>
@@ -165,15 +168,16 @@
                     <!-- Qty -->
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="input-group mb-3 w-100 flex-grow-1 justify-content-end align-items-center">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "  style="flex: 0 1 auto;" type="button"
-                                id="reduce">-</button>
-                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;" aria-describedby="" value="0"
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "
+                                style="flex: 0 1 auto;" type="button" id="reduce">-</button>
+                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;"
+                                aria-describedby="" value="0"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;" type="button"
-                                id="add">+</button>
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
+                                type="button" id="add">+</button>
                         </div>
                     </div>
-                    
+
                     <!-- Total Price = Qty * Actual Price -->
                     <div class="col-lg-4 d-flex justify-content-end align-items-center">
                         <p class="text-dark fs-5">₱7,996</p>
@@ -193,20 +197,21 @@
                     <p class="fs-5 text-secondary mb-0">Lorem Ipsum Shirt</p>
                     <p class="fs-6 text-secondary mb-0 text-light-700">₱ 1,999</p>
                     <p class="fs-6 text-primary">
-                        <ul class="list-unstyled d-none d-md-block">
-                            <li class="fs-6 text-primary">Lorem</li>
-                            <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                            <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
-                            <li class="fs-6 text-primary">Lorem Ipsum</li>
-                            <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                            <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
-                        </ul>
-                        </p>
+                    <ul class="list-unstyled d-none d-md-block">
+                        <li class="fs-6 text-primary">Lorem</li>
+                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                        <li class="fs-6 text-primary">Lorem Ipsum</li>
+                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                    </ul>
+                    </p>
                 </div>
                 <div class="col-md-6 col-4 d-flex flex-column flex-lg-row justify-content-center p-0">
                     <!-- Size -->
                     <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                        <select id="size" class="form-select mb-3 cart-select-width" aria-label=".form-select-lg example">
+                        <select id="size" class="form-select mb-3 cart-select-width"
+                            aria-label=".form-select-lg example">
                             <option selected value="xxs">XXS</option>
                             <option value="xs">XS</option>
                             <option value="m">M</option>
@@ -218,15 +223,16 @@
                     <!-- Qty -->
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="input-group mb-3 w-100 flex-grow-1 justify-content-end align-items-center">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "  style="flex: 0 1 auto;" type="button"
-                                id="reduce">-</button>
-                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;" aria-describedby="" value="0"
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "
+                                style="flex: 0 1 auto;" type="button" id="reduce">-</button>
+                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;"
+                                aria-describedby="" value="0"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;" type="button"
-                                id="add">+</button>
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
+                                type="button" id="add">+</button>
                         </div>
                     </div>
-                    
+
                     <!-- Total Price = Qty * Actual Price -->
                     <div class="col-lg-4 d-flex justify-content-end align-items-center">
                         <p class="text-dark fs-5">₱7,996</p>
@@ -246,20 +252,21 @@
                     <p class="fs-5 text-secondary mb-0">Lorem Ipsum Shirt</p>
                     <p class="fs-6 text-secondary mb-0 text-light-700">₱ 1,999</p>
                     <p class="fs-6 text-primary">
-                        <ul class="list-unstyled d-none d-md-block">
-                            <li class="fs-6 text-primary">Lorem</li>
-                            <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                            <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
-                            <li class="fs-6 text-primary">Lorem Ipsum</li>
-                            <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                            <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
-                        </ul>
-                        </p>
+                    <ul class="list-unstyled d-none d-md-block">
+                        <li class="fs-6 text-primary">Lorem</li>
+                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                        <li class="fs-6 text-primary">Lorem Ipsum</li>
+                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                    </ul>
+                    </p>
                 </div>
                 <div class="col-md-6 col-4 d-flex flex-column flex-lg-row justify-content-center p-0">
                     <!-- Size -->
                     <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                        <select id="size" class="form-select mb-3 cart-select-width" aria-label=".form-select-lg example">
+                        <select id="size" class="form-select mb-3 cart-select-width"
+                            aria-label=".form-select-lg example">
                             <option selected value="xxs">XXS</option>
                             <option value="xs">XS</option>
                             <option value="m">M</option>
@@ -271,15 +278,16 @@
                     <!-- Qty -->
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="input-group mb-3 w-100 flex-grow-1 justify-content-end align-items-center">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "  style="flex: 0 1 auto;" type="button"
-                                id="reduce">-</button>
-                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;" aria-describedby="" value="0"
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "
+                                style="flex: 0 1 auto;" type="button" id="reduce">-</button>
+                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;"
+                                aria-describedby="" value="0"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;" type="button"
-                                id="add">+</button>
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
+                                type="button" id="add">+</button>
                         </div>
                     </div>
-                    
+
                     <!-- Total Price = Qty * Actual Price -->
                     <div class="col-lg-4 d-flex justify-content-end align-items-center">
                         <p class="text-dark fs-5">₱7,996</p>
@@ -299,20 +307,21 @@
                     <p class="fs-5 text-secondary mb-0">Lorem Ipsum Shirt</p>
                     <p class="fs-6 text-secondary mb-0 text-light-700">₱ 1,999</p>
                     <p class="fs-6 text-primary">
-                        <ul class="list-unstyled d-none d-md-block">
-                            <li class="fs-6 text-primary">Lorem</li>
-                            <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                            <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
-                            <li class="fs-6 text-primary">Lorem Ipsum</li>
-                            <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                            <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
-                        </ul>
-                        </p>
+                    <ul class="list-unstyled d-none d-md-block">
+                        <li class="fs-6 text-primary">Lorem</li>
+                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                        <li class="fs-6 text-primary">Lorem Ipsum</li>
+                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
+                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                    </ul>
+                    </p>
                 </div>
                 <div class="col-md-6 col-4 d-flex flex-column flex-lg-row justify-content-center p-0">
                     <!-- Size -->
                     <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                        <select id="size" class="form-select mb-3 cart-select-width" aria-label=".form-select-lg example">
+                        <select id="size" class="form-select mb-3 cart-select-width"
+                            aria-label=".form-select-lg example">
                             <option selected value="xxs">XXS</option>
                             <option value="xs">XS</option>
                             <option value="m">M</option>
@@ -324,15 +333,16 @@
                     <!-- Qty -->
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="input-group mb-3 w-100 flex-grow-1 justify-content-end align-items-center">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "  style="flex: 0 1 auto;" type="button"
-                                id="reduce">-</button>
-                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;" aria-describedby="" value="0"
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "
+                                style="flex: 0 1 auto;" type="button" id="reduce">-</button>
+                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;"
+                                aria-describedby="" value="0"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;" type="button"
-                                id="add">+</button>
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
+                                type="button" id="add">+</button>
                         </div>
                     </div>
-                    
+
                     <!-- Total Price = Qty * Actual Price -->
                     <div class="col-lg-4 d-flex justify-content-end align-items-center">
                         <p class="text-dark fs-5">₱7,996</p>
@@ -342,7 +352,54 @@
         </div>
     </section>
 
+    <section class="px-2 pb-5">
+        <div class="container">
+            <div class="row d-flex flex-row-reverse">
+                <div class="col-md-4 d-flex flex-column pb-4 pb-md-0">
+                    <div class="border-bottom d-flex justify-content-between mb-4">
+                        <p class="text-uppercase text-secondary">Subtotal:</p>
+                        <p>₱ 18,299.99</p>
+                    </div>
+                    <a href="" class="btn bg-dark-200 text-light-200 p-3 text-secondary hover-towards-light">CHECKOUT</a>
 
+                </div>
+                <div class="col-md-8">
+                    <div class="accordion accordion-flush" id="accordions">
+                        <div class="accordion-item border-bottom mb-4">
+                            <h2 class="accordion-header" id="product_sizing_button">
+                                <button class="accordion-button collapsed text-secondary" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#product_sizing_info"
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Delivery and Returns
+                                </button>
+                            </h2>
+                            <div id="product_sizing_info" class="accordion-collapse collapse"
+                                aria-labelledby="size_panel">
+                                <div class="accordion-body text-secondary">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aspernatur repellendus magni maxime autem, dolorum dolor laudantium cum maiores blanditiis necessitatibus amet quaerat voluptatum. Atque corrupti libero ex voluptates neque.
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-bottom mb-4">
+                            <h2 class="accordion-header" id="mode_of_payment_button">
+                                <button class="accordion-button collapsed text-secondary" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#mode_of_payment_info"
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Mode of Payment
+                                </button>
+                            </h2>
+                            <div id="mode_of_payment_info" class="accordion-collapse collapse"
+                                aria-labelledby="size_panel">
+                                <div class="accordion-body text-secondary">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <footer>
