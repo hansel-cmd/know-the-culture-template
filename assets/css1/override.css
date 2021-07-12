@@ -294,6 +294,13 @@ h1 {
     grid-gap: 0.5rem;
 }
 
+.my-grid-when-clicked {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    grid-gap: 0.5rem;
+}
+
 .grid-item {
     display: flex;
     justify-content: center;
@@ -416,6 +423,15 @@ input[type="checkbox"]:checked {
     flex-grow: 1 !important;
 }
 
+.cart-padding {
+    margin-top: 5em;
+}
+
+.cart-select-width {
+    width: 80% !important;
+    flex-grow: 0% !important;
+}
+
 /* small */
 @media (min-width: 576px) {
     .special .btn {
@@ -475,6 +491,13 @@ input[type="checkbox"]:checked {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .my-grid-when-clicked {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
         grid-gap: 0.5rem;
     }
     
@@ -573,6 +596,13 @@ input[type="checkbox"]:checked {
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
+
+    .my-grid-when-clicked {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-gap: 0.5rem;
+    }
     
     .grid-item {
         display: flex;
@@ -592,6 +622,11 @@ input[type="checkbox"]:checked {
 
     .select-width {
         width: 100%;
+    }
+
+    .cart-select-width {
+        width: 50% !important;
+        flex-grow: 0% !important;
     }
 
 }
@@ -671,6 +706,13 @@ input[type="checkbox"]:checked {
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
+
+    .my-grid-when-clicked {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-gap: 0.5rem;
+    }
     
     .grid-item {
         display: flex;
@@ -716,6 +758,15 @@ input[type="checkbox"]:checked {
         overflow-y: auto;
         overflow-x: hidden;
         height: 75vh;
+    }
+
+    .cart-padding {
+        margin-top: 10em;
+    }
+
+    .cart-select-width {
+        width: 80% !important;
+        flex-grow: 0% !important;
     }
 }
 
@@ -779,6 +830,13 @@ input[type="checkbox"]:checked {
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
+
+    .my-grid-when-clicked {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-gap: 0.5rem;
+    }
     
     .grid-item {
         display: flex;
@@ -805,7 +863,6 @@ input[type="checkbox"]:checked {
         flex-grow: 0 !important;
     }
 
-
     .shop-modal-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -825,6 +882,10 @@ input[type="checkbox"]:checked {
         overflow-y: auto;
         overflow-x: hidden;
         height: 75vh;
+    }
+
+    .cart-padding {
+        margin-top: 10em;
     }
 }
 
