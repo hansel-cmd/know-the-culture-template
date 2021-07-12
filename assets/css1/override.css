@@ -294,6 +294,13 @@ h1 {
     grid-gap: 0.5rem;
 }
 
+.my-grid-when-clicked {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    grid-gap: 0.5rem;
+}
+
 .grid-item {
     display: flex;
     justify-content: center;
@@ -486,6 +493,13 @@ input[type="checkbox"]:checked {
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
+
+    .my-grid-when-clicked {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-gap: 0.5rem;
+    }
     
     .grid-item {
         display: flex;
@@ -580,6 +594,13 @@ input[type="checkbox"]:checked {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .my-grid-when-clicked {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
         grid-gap: 0.5rem;
     }
     
@@ -683,6 +704,13 @@ input[type="checkbox"]:checked {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .my-grid-when-clicked {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
         grid-gap: 0.5rem;
     }
     
@@ -802,6 +830,13 @@ input[type="checkbox"]:checked {
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
+
+    .my-grid-when-clicked {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-gap: 0.5rem;
+    }
     
     .grid-item {
         display: flex;
@@ -827,7 +862,6 @@ input[type="checkbox"]:checked {
         width: 15% !important;
         flex-grow: 0 !important;
     }
-
 
     .shop-modal-grid {
         display: grid;

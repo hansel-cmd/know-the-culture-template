@@ -129,9 +129,19 @@
 
 
     <!-- Sub Nav for Filter -->
-    <section class="border-bottom bg-light">
+    <section id="sub-nav" class="border-bottom bg-light">
         <div class=" py-2 px-5 ">
-            <div class="d-grid justify-content-end align-items-end">
+            <div class="d-flex justify-content-end align-items-end">
+                <a href="#sub-nav" class="btn text-secondary lead" role="button" onclick="changeLayout()"
+                    aria-controls="layout" id="layout">
+                    <p class="text-secondary mb-0 fs-5">
+                        <span class="me-2">
+                            <i id="layout-icon" class="bi bi-grid-1x2"></i>
+                        </span>
+                        Layout
+                    </p>
+                </a>
+
                 <a class="btn text-secondary lead" data-bs-toggle="offcanvas" href="#filter" role="button"
                     aria-controls="filter">
                     <p class="text-secondary mb-0 fs-5">
@@ -417,7 +427,7 @@
     <!-- Shop Items -->
     <section class="p-5 pb-0">
         <div class=" py-4">
-            <div class="my-grid pb-4">
+            <div id="shop-items" class="my-grid pb-4">
 
                 <!-- first row -->
                 <div class="grid-item grid-item-small flex-column">
@@ -582,11 +592,6 @@
                         <p class="mb-0 text-primary text-light-700 fs-6 text-center">Php 1,999</p>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
     </section>
@@ -600,11 +605,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body" >
+                <div class="modal-body">
                     <div class="shop-modal-grid">
                         <!-- PRODUCT IMAGE -->
                         <div class=" shop-modal-grid-item-left">
-                            <div id="carouselExampleCaptions" class="carousel slide carousel-dark h-100" data-bs-touch="true">
+                            <div id="carouselExampleCaptions" class="carousel slide carousel-dark h-100"
+                                data-bs-touch="true">
                                 <div class="carousel-indicators mb-2 hide-scroll">
                                     <img src="assets/images/b_front.jpg" data-bs-target="#carouselExampleCaptions"
                                         data-bs-slide-to="0"
@@ -619,13 +625,16 @@
                                 </div>
                                 <div class="carousel-inner h-100">
                                     <div class="carousel-item active h-100">
-                                        <img src="assets/images/b_front.jpg" class="d-block w-100 h-100 my-image" alt="...">
+                                        <img src="assets/images/b_front.jpg" class="d-block w-100 h-100 my-image"
+                                            alt="...">
                                     </div>
                                     <div class="carousel-item h-100">
-                                        <img src="assets/images/b_front.jpg" class="d-block w-100 h-100 my-image" alt="...">
+                                        <img src="assets/images/b_front.jpg" class="d-block w-100 h-100 my-image"
+                                            alt="...">
                                     </div>
                                     <div class="carousel-item h-100">
-                                        <img src="assets/images/b_front.jpg" class="d-block w-100 h-100 my-image" alt="...">
+                                        <img src="assets/images/b_front.jpg" class="d-block w-100 h-100 my-image"
+                                            alt="...">
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button"
@@ -749,9 +758,12 @@
 
 
                             <div class="row gap-2 p-3">
-                                <a href="" class="btn bg-dark-200 text-light-200 p-3 text-secondary hover-towards-light">BUY NOW</a>
                                 <a href=""
-                                    class="btn bg-light-200 text-dark-200 p-3 text-secondary my-outline-dark-200 hover-towards-dark">ADD TO CART</a>
+                                    class="btn bg-dark-200 text-light-200 p-3 text-secondary hover-towards-light">BUY
+                                    NOW</a>
+                                <a href=""
+                                    class="btn bg-light-200 text-dark-200 p-3 text-secondary my-outline-dark-200 hover-towards-dark">ADD
+                                    TO CART</a>
                             </div>
                         </div>
                     </div>
@@ -820,6 +832,23 @@
         </div>
     </footer>
 
+    <script>
+        function changeLayout() {
+            let shop_items = document.querySelector('#shop-items');
+            let layout_icon = document.querySelector('#layout-icon');
+
+            if (layout_icon.classList.contains('bi-grid-1x2')) {
+                layout_icon.classList.add('bi-grid-1x2-fill');
+                layout_icon.classList.remove('bi-grid-1x2');
+
+                shop_items.classList.add('my-grid-when-clicked');
+            } else {
+                layout_icon.classList.add('bi-grid-1x2');
+                layout_icon.classList.remove('bi-grid-1x2-fill');
+                shop_items.classList.remove('my-grid-when-clicked');
+            }
+        }
+    </script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
