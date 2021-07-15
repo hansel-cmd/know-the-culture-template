@@ -172,13 +172,14 @@
                     <!-- Qty -->
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="input-group mb-3 w-100 flex-grow-1 justify-content-end align-items-center">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "
-                                style="flex: 0 1 auto;" type="button" id="reduce">-</button>
-                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;"
-                                aria-describedby="" value="0"
-                                oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled"
+                                style="flex: 0 1 auto;" type="button" id="reduce-item-1" onclick="reduceQty(this, 'item-1')">-</button>
+                            <!-- Always change the max to the maximum qty of the item -->
+                            <input id="item-1" type="text" class="form-control text-center" style="flex: 0 1 30%;"
+                                aria-describedby="" value="1" max="20" min="1"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');" onchange="checkQty(this, 'reduce-item-1', 'add-item-1')">
                             <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
-                                type="button" id="add">+</button>
+                                type="button" id="add-item-1" onclick="increaseQty(this, 'item-1')">+</button>
                         </div>
                     </div>
 
@@ -227,13 +228,14 @@
                     <!-- Qty -->
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="input-group mb-3 w-100 flex-grow-1 justify-content-end align-items-center">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "
-                                style="flex: 0 1 auto;" type="button" id="reduce">-</button>
-                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;"
-                                aria-describedby="" value="0"
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled"
+                                style="flex: 0 1 auto;" type="button" id="reduce-item-2" onclick="reduceQty(this, 'item-2')">-</button>
+                            <!-- Always change the max to the maximum qty of the item -->
+                            <input id="item-2" type="text" class="form-control text-center" style="flex: 0 1 30%;"
+                                aria-describedby="" value="1" max="20" min="1"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
                             <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
-                                type="button" id="add">+</button>
+                                type="button" id="add-item-2" onclick="increaseQty(this, 'item-2')">+</button>
                         </div>
                     </div>
 
@@ -282,13 +284,14 @@
                     <!-- Qty -->
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="input-group mb-3 w-100 flex-grow-1 justify-content-end align-items-center">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "
-                                style="flex: 0 1 auto;" type="button" id="reduce">-</button>
-                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;"
-                                aria-describedby="" value="0"
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled"
+                                style="flex: 0 1 auto;" type="button" id="reduce-item-3" onclick="reduceQty(this, 'item-3')">-</button>
+                            <!-- Always change the max to the maximum qty of the item -->
+                            <input id="item-3" type="text" class="form-control text-center" style="flex: 0 1 30%;"
+                                aria-describedby="" value="1" max="20" min="1"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
                             <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
-                                type="button" id="add">+</button>
+                                type="button" id="add-item-3" onclick="increaseQty(this, 'item-3')">+</button>
                         </div>
                     </div>
 
@@ -337,13 +340,14 @@
                     <!-- Qty -->
                     <div class="col-lg-4 d-flex justify-content-center align-items-center">
                         <div class="input-group mb-3 w-100 flex-grow-1 justify-content-end align-items-center">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled "
-                                style="flex: 0 1 auto;" type="button" id="reduce">-</button>
-                            <input type="text" class="form-control text-center" style="flex: 0 1 30%;"
-                                aria-describedby="" value="0"
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled"
+                                style="flex: 0 1 auto;" type="button" id="reduce-item-4" onclick="reduceQty(this, 'item-4')">-</button>
+                            <!-- Always change the max to the maximum qty of the item -->
+                            <input id="item-4" type="text" class="form-control text-center" style="flex: 0 1 30%;"
+                                aria-describedby="" value="1" max="20" min="1"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
                             <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
-                                type="button" id="add">+</button>
+                                type="button" id="add-item-4" onclick="increaseQty(this, 'item-4')">+</button>
                         </div>
                     </div>
 
@@ -356,6 +360,8 @@
         </div>
     </section>
 
+
+    <!-- Delivery  Returns, Mode of Payment, and Checkout -->
     <section class="px-2 pb-5">
         <div class="container">
             <div class="row d-flex flex-row-reverse">
@@ -429,6 +435,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/customjs.js"></script>
 
     <script src="assets/js/bootstrap.min.js"></script>
 </body>

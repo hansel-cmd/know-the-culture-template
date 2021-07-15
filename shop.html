@@ -689,12 +689,13 @@
                                 <label for="size" class="form-label text-secondary text-dark-200">Quantity:</label>
                                 <div class="input-group mb-3">
                                     <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled"
-                                        type="button" id="reduce">-</button>
-                                    <input type="text" class="form-control text-center select-qty" aria-describedby=""
-                                        value="0"
-                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                                        type="button" id="reduce-item-1" onclick="reduceQty(this, 'item-1')">-</button>
+                                    <!-- Always change the max to the maximum qty of the item -->
+                                    <input id="item-1" type="text" class="form-control text-center select-qty"
+                                        aria-describedby="" value="1" max="20" min="1"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');" onchange="checkQty(this, 'reduce-item-1', 'add-item-1')">
                                     <button class="btn btn-outline-secondary bg-dark-200 text-light-200" type="button"
-                                        id="add">+</button>
+                                        id="add-item-1" onclick="increaseQty(this, 'item-1')">+</button>
                                 </div>
                             </div>
 
@@ -850,6 +851,7 @@
             }
         }
     </script>
+    <script src="assets/js/customjs.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
