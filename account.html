@@ -125,7 +125,7 @@
                             <label for="password" class="form-label text-secondary d-flex justify-content-between">
                                 Password
                                 <span>
-                                    <a href="#" class="text-decoration-none" style="color: #c3c3c3;">Forgot
+                                    <a href="#" onclick="showForgotPassword()" class="text-decoration-none" style="color: #c3c3c3;">Forgot
                                         Password?</a>
                                 </span>
                             </label>
@@ -166,6 +166,20 @@
                             </a>
                     </div>
                 </div>
+                <div id="forgot-password" class="card-body d-none">
+                    <h5 class="card-title text-secondary p-4 fs-4">Retrieve Password</h5>
+                    <div class="px-4 pb-4">
+                        <div class="mb-3">
+                            <label for="retrieve_email" class="form-label text-secondary">Email</label>
+                            <input type="email" class="form-control py-2" id="retrieve_email"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <btn
+                            class="mt-3 btn bg-light-200 py-3 text-light-200 text-secondary px-5 bg-dark-200 hover-towards-light w-100">
+                            Retrieve Password
+                            </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -202,14 +216,16 @@
         </div>
     </footer>
 
-    
+
     <script>
         function showSignIn() {
             let sign_in_button = document.querySelector('#sign-in-button');
             let sign_up_button = document.querySelector('#sign-up-button');
             let sign_in = document.querySelector('#sign-in');
             let sign_up = document.querySelector('#sign-up');
+            let forgot_password = document.querySelector('#forgot-password');
 
+            forgot_password.classList.add('d-none');
             sign_up.classList.add('d-none');
             sign_in.classList.remove('d-none');
             sign_in.classList.add('d-block');
@@ -226,7 +242,9 @@
             let sign_up_button = document.querySelector('#sign-up-button');
             let sign_in = document.querySelector('#sign-in');
             let sign_up = document.querySelector('#sign-up');
+            let forgot_password = document.querySelector('#forgot-password');
 
+            forgot_password.classList.add('d-none');
             sign_in.classList.add('d-none');
             sign_up.classList.remove('d-none');
             sign_up.classList.add('d-block');
@@ -236,6 +254,29 @@
             sign_in_button.classList.remove('current-tab-active');
             sign_in_button.classList.add('current-tab');
         }
+
+        function showForgotPassword() {
+            let forgot_password = document.querySelector('#forgot-password');
+            let sign_in_button = document.querySelector('#sign-in-button');
+            let sign_up_button = document.querySelector('#sign-up-button');
+            let sign_in = document.querySelector('#sign-in');
+            let sign_up = document.querySelector('#sign-up');
+
+            sign_up.classList.remove('d-block');
+            sign_up.classList.add('d-none');
+            sign_in.classList.remove('d-block');
+            sign_in.classList.add('d-none');
+
+            sign_up_button.classList.remove('current-tab-active');
+            sign_in_button.classList.remove('current-tab-active');
+            sign_up_button.classList.add('current-tab');
+            sign_in_button.classList.add('current-tab');
+
+            forgot_password.classList.remove('d-none');
+            forgot_password.classList.add('d-block');
+        }
+
+
     </script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
