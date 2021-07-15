@@ -432,6 +432,24 @@ input[type="checkbox"]:checked {
     flex-grow: 0% !important;
 }
 
+.log-in-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+.current-tab-active {
+    background-color: white;
+}
+
+.current-tab {
+    color: #c7c7c7;
+}
+
+
+
 /* small */
 @media (min-width: 576px) {
     .special .btn {
@@ -629,6 +647,9 @@ input[type="checkbox"]:checked {
         flex-grow: 0% !important;
     }
 
+    .my-own-width-tab {
+        width: 75%;
+    }
 }
 
 
@@ -768,6 +789,10 @@ input[type="checkbox"]:checked {
         width: 80% !important;
         flex-grow: 0% !important;
     }
+
+    .my-own-width-tab {
+        width: 60%;
+    }
 }
 
 /* extra large */
@@ -886,6 +911,10 @@ input[type="checkbox"]:checked {
 
     .cart-padding {
         margin-top: 10em;
+    }
+
+    .my-own-width-tab {
+        width: 40%;
     }
 }
 
