@@ -16,6 +16,26 @@
     <link rel="stylesheet" href="assets/css1/override.css">
     <title>Know The Culture</title>
 
+    <SCRIPT language=JavaScript>
+        
+        var message = "";
+        
+        function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 
+            alert(message);
+            window.location.reload();
+            return false; 
+        }
+        
+        if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 
+            alert(message);
+            window.location.reload();
+            return false; } 
+        }
+        
+        document.onmousedown = rtclickcheck;
+        
+    </SCRIPT>
+
 </head>
 
 <body>
@@ -338,6 +358,44 @@
     </footer>
 
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        document.onkeydown = function(e) {
+                if (e.ctrlKey && 
+                    (e.keyCode === 67 || 
+                     e.keyCode === 86 || 
+                     e.keyCode === 85 || 
+                     e.keyCode === 117)) {
+                    return false;
+                } else {
+                    return true;
+                }
+        };
+        $(document).keypress("u",function(e) {
+          if(e.ctrlKey)
+          {
+        return false;
+        }
+        else
+        {
+        return true;
+        }
+        });
+        </script>
+        
+        
+        <script type="text/javascript">
+            window.oncontextmenu = function () {
+                return false;
+            }
+            $(document).keydown(function (event) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                    return false;
+                }
+            });
+        </script>
 </body>
 
 </html>
