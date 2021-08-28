@@ -457,6 +457,19 @@ input[type="checkbox"]:checked {
 }
 
 
+.dropdown-toggle::after {
+    transform: rotate(270deg);
+}
+
+.dropdown-toggle:focus::after {
+    transform: rotate(360deg);
+}
+
+.dropdown-item:focus {
+    background-color: #181818;
+    color: white;
+}
+
 
 /* small */
 @media (min-width: 576px) {

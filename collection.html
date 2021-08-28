@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css1/override.css">
     <title>Know The Culture</title>
 
-    <SCRIPT language=JavaScript>
+    <!-- <SCRIPT language=JavaScript>
         
         var message = "";
         
@@ -32,7 +32,7 @@
         
         document.onmousedown = rtclickcheck;
         
-    </SCRIPT>
+    </SCRIPT> -->
 
 </head>
 
@@ -146,35 +146,32 @@
         </div>
     </section>
 
-    <!-- Sub Nav for Filter -->
+    <!-- Sub Nav For Collection Link -->
     <section id="sub-nav" class="border-bottom bg-light">
         <div class=" py-2 px-5 ">
-            <div class="d-flex justify-content-end align-items-end">
-                <a href="#sub-nav" class="btn text-secondary lead" role="button" onclick="changeLayout()"
-                    aria-controls="layout" id="layout">
-                    <p class="text-secondary mb-0 fs-5">
-                        <span class="me-2">
-                            <i id="layout-icon" class="bi bi-grid-1x2"></i>
-                        </span>
-                        Layout
-                    </p>
-                </a>
-
-                <a class="btn text-secondary lead" data-bs-toggle="offcanvas" href="#filter" role="button"
-                    aria-controls="filter">
-                    <p class="text-secondary mb-0 fs-5">
-                        <span class="me-2"><i class="bi bi-sliders"></i></span>
-                        Filters
-                    </p>
-                </a>
-
+            <div class="d-flex justify-content-start align-items-end">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle text-secondary fs-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span><i class="bi bi-collection me-4"></i></span> All Collections
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#my-collections">All Collections</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Ball Club Collection 2021</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Ball With Us Collection 2019</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Childhood Dreams Collections 2020</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Mamba Tribute 2021</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">OG Logo Collection F_W 2019</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Pursuit Fair Vol. 5 Collection 2019</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Varsity Collection F_W 2020</a></li>
+                    </ul>
+                  </div>
             </div>
         </div>
     </section>
 
 
     <!-- Collections -->
-    <section class="p-5 pb-0">
+    <section id="my-collections" class="p-5 pb-0">
         <div class=" py-4">
             <div class="my-grid pb-4">
 
@@ -691,8 +688,10 @@
         </div>
     </footer>
 
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
         document.onkeydown = function(e) {
                 if (e.ctrlKey && 
@@ -730,7 +729,7 @@
                     return false;
                 }
             });
-        </script>
+        </script> -->
 </body>
 
 </html>
