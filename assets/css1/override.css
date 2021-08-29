@@ -822,7 +822,9 @@ input[type="checkbox"]:checked {
     
     .my-container {
         margin: 0 auto;
-        max-width: 1320px;
+        /* max-width: 1320px; */
+        max-width: 100%;
+        width: 90%;
     }
 
     .img-responsive {
