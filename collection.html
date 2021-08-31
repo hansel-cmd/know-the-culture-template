@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/circle logo 181818.png">
+    <link rel="icon" href="assets/images/circle logo black.png" sizes="192x192">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato&family=Ropa+Sans&family=Rosario:wght@700&family=Ruda&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css1/override.css">
-    <title>Know The Culture</title>
+    <title>Know The Culture | Collections</title>
 
-    <SCRIPT language=JavaScript>
+    <!-- <SCRIPT language=JavaScript>
         
         var message = "";
         
@@ -32,15 +32,15 @@
         
         document.onmousedown = rtclickcheck;
         
-    </SCRIPT>
+    </SCRIPT> -->
 
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white pt-md-4 pb-2 navbar-light fixed-top d-lg-block d-none">
-        <div class="my-container d-flex">
+    <nav class="navbar navbar-expand-lg bg-white pt-md-3 pb-2 navbar-light fixed-top d-lg-block d-none">
+        <div class="container d-flex">
             <div class="row align-items-center">
                 <div class="test col-lg-4">
                     <a class="navbar-brand" href="index.html">
@@ -53,7 +53,7 @@
                             <a class="nav-link" href="shop.html">Shop</a>
                         </li>
                         <li class="nav-item mx-4 active">
-                            <a class="nav-link" href="#">Collection</a>
+                            <a class="nav-link" href="#">Collections</a>
                         </li>
                         <li class="nav-item ms-4">
                             <a class="nav-link" href="about.html">About</a>
@@ -95,7 +95,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mx-4 active">
-                        <a class="nav-link" href="#">Collection</a>
+                        <a class="nav-link" href="#">Collections</a>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="shop.html">Shop</a>
@@ -115,87 +115,79 @@
 
     </nav>
 
-    <!-- Showcase -->
-    <section class="px-4 py-5 p-lg-0 pt-lg-5 text-center text-md-start about-landing">
-        <div class="mt-5 py-4">
-            <div class="d-flex flex-column align-items-center justify-content-center">
-                <div class="mb-3">
-                    <img src="assets/images/logo black.png" alt="know the culture logo" style="opacity: 0.8;">
-                </div>
-                <div>
-                    <h1 class="text-accent fw-bold text-center other-page-header ">Our Collection
-                    </h1>
-                    <h2 class="text-accent text-center other-page-h2 mt-3 mb-4">Know The Culture</h2>
-                    <p class="lead my-4 pt-4 text-secondary p-other-page text-center" style="color: black !important;">
-                        A life style brand that brings unity through different waves of culture.
-                    </p>
-                    <div class="special justify-content-between mb-4 pb-4">
-                        <a href="shop.html"
-                            class="btn bg-dark-200 btn-lg py-sm-3 py-lg-3 text-light-200 text-secondary hover-towards-light">
-                            Shop Now
-                        </a>
-
-                        <a href="about.html"
-                            class="btn bg-light-200 btn-lg py-sm-3 py-lg-3 text-secondary my-outline-dark-200 hover-towards-dark">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+    <!-- Sub Nav For Collection Link -->
+    <section id="sub-nav" class="border-bottom bg-light px-4 py-5 p-lg-0 pt-lg-4 container">
+        <div class=" py-2 px-5 ">
+            <div class="d-flex justify-content-start align-items-end">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle text-secondary fs-6" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span><i class="bi bi-collection me-4"></i></span> All Collections
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#my-collections">All Collections</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Ball Club Collection 2021</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Ball With Us Collection 2019</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Childhood Dreams Collections 2020</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Mamba Tribute 2021</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">OG Logo Collection F_W 2019</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Pursuit Fair Vol. 5 Collection 2019</a></li>
+                      <li><a class="dropdown-item" href="#my-collections">Varsity Collection F_W 2020</a></li>
+                    </ul>
+                  </div>
             </div>
-
         </div>
     </section>
 
 
     <!-- Collections -->
-    <section class="p-5 pb-0">
-        <div class=" py-4">
+    <section id="my-collections" class="p-5 pb-0">
+        <div class="container py-4">
             <div class="my-grid pb-4">
 
             <!-- first row -->
                 <div class="grid-item enlarge-effect grid-item-big">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_5.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (1).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_1.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (1).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_2.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (2).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_3.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (2).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_1.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (3).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_4.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (3).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_5.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (4).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_6.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (4).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100" src="assets/images/collection_4.jpg" alt="">
+                        <img class="w-100" src="assets/images/collections/collection (5).JPEG" alt="">
                     </a>
                 </div>
 
@@ -203,79 +195,388 @@
             <!-- second row -->
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_5.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (5).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_1.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (6).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_2.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (6).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_3.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (7).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-big">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_1.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (7).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_4.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (8).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_5.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (8).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_6.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (9).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100" src="assets/images/collection_4.jpg" alt="">
+                        <img class="w-100" src="assets/images/collections/collection (9).JPG" alt="">
                     </a>
                 </div>
             
             <!-- third row -->
                 <div class="grid-item enlarge-effect grid-item-big">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_5.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (10).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_1.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (10).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_2.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (11).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_3.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (11).JPG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_1.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (12).JPEG" alt="">
                     </a>
                 </div>
                 <div class="grid-item enlarge-effect grid-item-small">
                     <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
-                        <img class="w-100 my-image" src="assets/images/collection_4.jpg" alt="">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (12).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (13).JPEG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (13).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (14).JPEG" alt="">
+                    </a>
+                </div>
+
+            <!-- fourth row -->
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (14).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (15).JPEG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (15).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (16).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-big">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (17).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (18).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (19).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (20).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100" src="assets/images/collections/collection (21).JPG" alt="">
+                    </a>
+                </div>
+
+            <!-- fifth row -->
+                <div class="grid-item enlarge-effect grid-item-big">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (22).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (23).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (24).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (25).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (26).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (27).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (28).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (29).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (30).JPG" alt="">
+                    </a>
+                </div>
+
+            <!-- sixth row -->
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (31).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (32).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (33).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (34).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-big">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (35).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (36).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (37).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (38).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100" src="assets/images/collections/collection (39).JPG" alt="">
+                    </a>
+                </div>
+
+            <!-- seventh row -->
+                <div class="grid-item enlarge-effect grid-item-big">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (40).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (41).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (42).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (43).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (44).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (45).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (46).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (47).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (48).JPG" alt="">
+                    </a>
+                </div>
+
+            <!-- eightth row -->
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (49).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (50).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (51).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (52).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-big">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (53).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (54).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (55).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (56).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100" src="assets/images/collections/collection (57).jpg" alt="">
+                    </a>
+                </div>
+
+            <!-- ninth row -->
+                <div class="grid-item enlarge-effect grid-item-big">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (58).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (59).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (60).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (61).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (62).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (63).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (64).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (65).jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (66).jpg" alt="">
+                    </a>
+                </div>
+
+            <!-- tenth row -->
+                 <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (67).JPG" alt="">
+                    </a>
+                </div>
+                <div class="grid-item enlarge-effect grid-item-small">
+                    <a href="#collection1" data-bs-toggle="modal" class="h-100 w-100">
+                        <img class="w-100 my-image" src="assets/images/collections/collection (68).JPG" alt="">
                     </a>
                 </div>
             </div>
@@ -334,29 +635,54 @@
     
     <footer>
         <div class="container">
-            <div class="row align-items-center d-block d-sm-flex">
-                <div class="d-none d-lg-block col-lg-4">
-                    <div class="footer-logo d-flex align-items-center">
-                        <a href="index.html">
-                            <img class="img-fluid w-75" src="assets/images/circle logo 181818.png"
-                            alt="know the culture logo">
-                        </a>
+            <div class="row p-md-5 py-5">
+                <div class="col-md-4 col-lg-2 text-center">
+                    <div>
+                        <img class="img-fluid footer-logo" src="assets/images/circle logo 181818.png"
+                                alt="know the culture logo" >
+                    </div>
+                    <p class="text-secondary text-light-500 fs-6 pb-0 mb-0">Know The Culture.</p>
+                    <p class="text-secondary text-light-700 fs-6">All Rights Reserved.</p>
+                    
+                </div>
+                <div class="col-md-1 col-lg-2">
+
+                </div>
+                <div class="col-sm-7 col-md-7 col-lg-4">
+                    <h4 class="footer-p nav-link text-light-500 text-secondary ps-0 text-center fs-5">LINKS</h4>
+                    <div class="d-flex justify-content-around">
+                        <ul class="list-unstyled text-light-500 fs-5">
+                            <li><a href="index.html" class="text-decoration-none text-light-500">Home</a></li>
+                            <li><a href="shop.html" class="text-decoration-none text-light-500">Shop</a></li>
+                            <li><a href="collection.html" class="text-decoration-none text-light-500">Collections</a></li>
+                            <li><a href="about.html" class="text-decoration-none text-light-500">About Us</a></li>
+                        </ul>
+                        <ul class="list-unstyled text-light-500 fs-5 text-start">
+                            <li><a href="cart.html" class="text-decoration-none text-light-500">My Cart</a></li>
+                            <li><a href="account.html" class="text-decoration-none text-light-500">Account</a></li>
+                            <li><a href="about.html#faq" class="text-decoration-none text-light-500">FAQs</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="d-flex col-5 col-sm-6 col-lg-4 justify-content-lg-center m-auto justify-content-sm-start justify-content-center">
-                    <a class="footer-p nav-link text-light-500 text-secondary " href="#">Know The Culture</a>
+                <div class="d-none col-md-1 d-lg-block">
+
                 </div>
-                <div class="d-flex col-7 col-sm-6 col-lg-4 justify-content-end m-auto">
-                    <a class="nav-link text-light-500 text-secondary" href="https://www.facebook.com/knowthecultureph" target="_blank">Facebook</a>
-                    <a class="nav-link text-light-500 text-secondary" href="https://www.instagram.com/knowthecultureph" target="_blank">Instagram</a>
-                    <a class="nav-link text-light-500 text-secondary" href="about.html#faq">FAQs</a>
+                <div class="col-sm-5 col-md-12 col-lg-3">
+                    <h4 class="footer-p nav-link text-light-500 text-secondary ps-0 fs-5 text-lg-end text-center">Connect with us.</h4>
+                    <div class="d-flex justify-content-lg-end justify-content-center">
+                        <a class="nav-link text-light-500 text-secondary footer-p" href="https://www.facebook.com/knowthecultureph" target="_blank"><span><i class="bi bi-facebook"></i></span></a>
+                        <a class="nav-link text-light-500 text-secondary footer-p" href="https://www.instagram.com/knowthecultureph" target="_blank"><span><i class="bi bi-instagram"></i></span></a>
+                        <a class="nav-link text-light-500 text-secondary footer-p" href="https://twitter.com/knwthcltrph"><i class="bi bi-twitter"></i></span></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
         document.onkeydown = function(e) {
                 if (e.ctrlKey && 
@@ -394,7 +720,7 @@
                     return false;
                 }
             });
-        </script>
+        </script> -->
 </body>
 
 </html>

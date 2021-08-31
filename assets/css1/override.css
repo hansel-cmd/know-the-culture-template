@@ -120,6 +120,11 @@ body::before {
     color: #F3F3F3 !important;
 }
 
+nav a {
+    font-size: 1.0125rem;
+    text-transform: uppercase;
+}
+
 .my-outline-dark-200 {
     border-color: var(--clr-dark-200) !important;
 }
@@ -137,11 +142,11 @@ li {
 }
 
 .active {
-    border-bottom: 4px #181818 solid;
+    border-bottom: 2px #181818 solid;
 }
 
 .active-lie {
-    border-bottom: 4px white solid;
+    border-bottom: 2px white solid;
 }
 
 .active-pagination {
@@ -155,11 +160,11 @@ li {
 }
 
 .navbar {
-    box-shadow: 0 0.5px 0px 0 #C7C7C7;
+    box-shadow: 0 1px 0px 0 #E7E7E7;
 }
 
 .navbar li:hover {
-    border-bottom: 4px #181818 solid;
+    border-bottom: 2px #181818 solid;
 }
 
 .img-responsive {
@@ -167,7 +172,10 @@ li {
 }
 
 .test {
+    height: 100%;
     max-width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .test-2 {
@@ -437,7 +445,7 @@ input[type="checkbox"]:checked {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 95vh;
+    min-height: 100vh;
 }
 
 .current-tab-active {
@@ -448,6 +456,24 @@ input[type="checkbox"]:checked {
     color: #c7c7c7;
 }
 
+
+.dropdown-toggle::after {
+    transform: rotate(270deg);
+}
+
+.dropdown-toggle:focus::after {
+    transform: rotate(360deg);
+}
+
+.dropdown-item:focus {
+    background-color: #181818;
+    color: white;
+}
+
+.footer-logo {
+    width: 25% !important;
+    height: 25% !important;
+}
 
 
 /* small */
@@ -566,7 +592,7 @@ input[type="checkbox"]:checked {
     }
         
     .img-responsive {
-        width: 70%;
+        width: 50%;
     }
 
     .my-flex {
@@ -590,7 +616,7 @@ input[type="checkbox"]:checked {
     }
 
     .footer-p {
-        font-size: 1.75rem;
+        font-size: 1.075rem;
     }
 
     .other-page-header {
@@ -649,6 +675,11 @@ input[type="checkbox"]:checked {
 
     .my-own-width-tab {
         width: 75%;
+    }
+
+    .footer-logo {
+        width: 100% !important;
+        height: 75% !important;
     }
 }
 
@@ -714,11 +745,6 @@ input[type="checkbox"]:checked {
     
     .my-flex-landing-shop > * {
         flex: 1 1 46%;
-    }
-
-    .footer-logo {
-        max-width: 30%;
-        max-height: 30%;
     }
 
     .my-grid {
@@ -801,11 +827,13 @@ input[type="checkbox"]:checked {
     
     .my-container {
         margin: 0 auto;
-        max-width: 1320px;
+        /* max-width: 1320px; */
+        max-width: 100%;
+        width: 90%;
     }
 
     .img-responsive {
-        width: 75%;
+        width: 50%;
     }
 
     .my-flex {
@@ -851,9 +879,13 @@ input[type="checkbox"]:checked {
 
     .my-grid {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1.5rem;
+    }
+
+    .my-grid img {
+        border: 1px solid black;
     }
 
     .my-grid-when-clicked {
