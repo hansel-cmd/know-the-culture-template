@@ -270,7 +270,7 @@ footer {
 
 .shop-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
 }
@@ -485,6 +485,16 @@ input[type="checkbox"]:checked {
     cursor: pointer;
 }
 
+.out-of-stock {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0 1rem;
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    pointer-events: none;
+}
 
 /* small */
 @media (min-width: 576px) {
@@ -528,6 +538,20 @@ input[type="checkbox"]:checked {
     .my-grid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -610,6 +634,27 @@ input[type="checkbox"]:checked {
     .my-grid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -716,6 +761,13 @@ input[type="checkbox"]:checked {
     .my-grid {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -835,6 +887,13 @@ input[type="checkbox"]:checked {
         grid-gap: 1.5rem;
     }
 
+    .shop-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
     .my-grid-when-clicked {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
@@ -869,7 +928,7 @@ input[type="checkbox"]:checked {
 
     .shop-modal-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
