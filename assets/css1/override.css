@@ -470,6 +470,11 @@ input[type="checkbox"]:checked {
     color: white;
 }
 
+.footer-logo {
+    width: 25% !important;
+    height: 25% !important;
+}
+
 
 /* small */
 @media (min-width: 576px) {
@@ -671,6 +676,11 @@ input[type="checkbox"]:checked {
     .my-own-width-tab {
         width: 75%;
     }
+
+    .footer-logo {
+        width: 100% !important;
+        height: 75% !important;
+    }
 }
 
 
@@ -735,11 +745,6 @@ input[type="checkbox"]:checked {
     
     .my-flex-landing-shop > * {
         flex: 1 1 46%;
-    }
-
-    .footer-logo {
-        max-width: 30%;
-        max-height: 30%;
     }
 
     .my-grid {
@@ -874,9 +879,13 @@ input[type="checkbox"]:checked {
 
     .my-grid {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1.5rem;
+    }
+
+    .my-grid img {
+        border: 1px solid black;
     }
 
     .my-grid-when-clicked {
