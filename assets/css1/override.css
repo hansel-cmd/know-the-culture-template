@@ -68,10 +68,6 @@ body::before {
     font-family: 'Ruda', sans-serif !important;
 }
 
-.text-accent-landing {
-    font-family: 'Rosario', sans-serif !important;
-}
-
 .bg-light {
     background-color: #FFFFFF !important;
 }
@@ -873,7 +869,7 @@ input[type="checkbox"]:checked {
     .my-flex {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.25em;
+        gap: 0.25em;
     }
     
     .my-flex > * {
@@ -883,7 +879,7 @@ input[type="checkbox"]:checked {
     .my-flex-landing-shop {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.25em;
+        gap: 0.5em;
     }
     
     .my-flex-landing-shop > * {
