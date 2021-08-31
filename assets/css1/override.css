@@ -1,3 +1,11 @@
+html {
+    font-size: 14.5px;   
+}
+
+body {
+    font-size: 14.5px;
+}
+
 body::before {
     display: block;
     content: '';
@@ -49,7 +57,7 @@ body::before {
 }
 
 .text-primary {
-    font-family:  'Lato', sans-serif !important;
+    font-family:  'Arial', sans-serif !important;
 }
 
 .text-secondary {
@@ -58,10 +66,6 @@ body::before {
 
 .text-accent {
     font-family: 'Ruda', sans-serif !important;
-}
-
-.text-accent-landing {
-    font-family: 'Rosario', sans-serif !important;
 }
 
 .bg-light {
@@ -182,21 +186,6 @@ li {
     max-width: 25%;
 }
 
-
-.showcase-landing {
-    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("../../assets/images/other page.jpg");
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.about-landing {
-    background: linear-gradient(0deg, rgba(160,160,160, 0.37),  rgba(160,160,160, 0.37)), url("../../assets/images/other page.jpg");
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
 .my-banner {
     width: 100%;
     height: 100%;
@@ -222,9 +211,9 @@ footer {
     max-width: 39.125rem;
 }
 
-h1 {
+/* h1 {
     font-size: 3rem;
-}
+} */
 
 .special {
     display: block;
@@ -237,8 +226,7 @@ h1 {
 }
 
 .non-special .btn {
-    width: 100%;
-    margin: 2px;
+    width: auto;
 }
 
 .navbar-toggler:focus,
@@ -280,21 +268,14 @@ h1 {
     flex: 1;
 }
 
-.other-page-header {
-    font-size: 4.5rem !important;
-    margin: 0 auto;
-    border-bottom: 2px solid black;
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
 }
 
-.other-page-underline-about {
-    max-width: 33rem;
-}
-
-.other-page-h2 {
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-}
-
+/* my-grid is for collection */
 .my-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -432,7 +413,7 @@ input[type="checkbox"]:checked {
 }
 
 .cart-padding {
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .cart-select-width {
@@ -475,6 +456,45 @@ input[type="checkbox"]:checked {
     height: 25% !important;
 }
 
+.new-qty-container {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;  
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+.out-of-stock {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0 1rem;
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    pointer-events: none;
+}
 
 /* small */
 @media (min-width: 576px) {
@@ -503,7 +523,6 @@ input[type="checkbox"]:checked {
 
     .non-special .btn {
         width: auto;
-        margin: 2px;
     }
 
     .my-flex-landing-shop {
@@ -516,24 +535,23 @@ input[type="checkbox"]:checked {
         flex: 1 1 47%;
     }
 
-    .other-page-header {
-        font-size: 4rem !important;
-        margin: 0 auto;
-        border-bottom: 2px solid black;
-    }
-    
-    .other-page-underline-about {
-        max-width: 33rem;
-    }
-    
-    .other-page-h2 {
-        font-size: 2rem;
-        letter-spacing: 0.5rem;
-    }
-
     .my-grid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -568,15 +586,9 @@ input[type="checkbox"]:checked {
 
 /* medium */
 @media (min-width: 768px) {
-    h1 {
+    /* h1 {
         font-size: 3.563rem;
-    }
-
-    .showcase-landing {
-        max-width: 100%;
-        background-image: url("../../assets/images/landing page1.png");
-        background-size: cover;
-    }
+    } */
 
     #landing_image {
         max-width: 50%;
@@ -619,24 +631,30 @@ input[type="checkbox"]:checked {
         font-size: 1.075rem;
     }
 
-    .other-page-header {
-        font-size: 5rem !important;
-        margin: 0 auto;
-        border-bottom: 2px solid black;
-    }
-    
-    .other-page-underline-about {
-        max-width: 33rem;
-    }
-    
-    .other-page-h2 {
-        font-size: 2.25rem;
-        letter-spacing: 0.5rem;
-    }
-
     .my-grid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -686,10 +704,9 @@ input[type="checkbox"]:checked {
 
 /* large */
 @media (min-width: 992px) {
-    h1 {
-        /* font-size: 5.563rem; */
+    /* h1 {
         font-size: 4.563rem;
-    }
+    } */
 
     .my-container {
         margin: 0 auto;
@@ -698,12 +715,6 @@ input[type="checkbox"]:checked {
 
     .img-responsive {
         width: 80%;
-    }
-
-    .showcase-landing {
-        max-width: 100%;
-        background-image: url("../../assets/images/landing page1.png");
-        background-size: cover;
     }
 
     #landing_image {
@@ -750,6 +761,13 @@ input[type="checkbox"]:checked {
     .my-grid {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .shop-modal-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -808,7 +826,7 @@ input[type="checkbox"]:checked {
     }
 
     .cart-padding {
-        margin-top: 10em;
+        margin-top: 5em;
     }
 
     .cart-select-width {
@@ -839,7 +857,7 @@ input[type="checkbox"]:checked {
     .my-flex {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.25em;
+        gap: 0.25em;
     }
     
     .my-flex > * {
@@ -849,7 +867,7 @@ input[type="checkbox"]:checked {
     .my-flex-landing-shop {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.25em;
+        gap: 0.5em;
     }
     
     .my-flex-landing-shop > * {
@@ -862,30 +880,18 @@ input[type="checkbox"]:checked {
         max-width: 39rem;
     }
 
-    .other-page-header {
-        font-size: 7.75rem !important;
-        margin: 0 auto;
-        border-bottom: 2px solid black;
-    }
-    
-    .other-page-underline-about {
-        max-width: 33rem;
-    }
-    
-    .other-page-h2 {
-        font-size: 3rem;
-        letter-spacing: 0.5rem;
-    }
-
     .my-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
 
-    .my-grid img {
-        border: 1px solid black;
+    .shop-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
     }
 
     .my-grid-when-clicked {
@@ -922,7 +928,7 @@ input[type="checkbox"]:checked {
 
     .shop-modal-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -942,7 +948,7 @@ input[type="checkbox"]:checked {
     }
 
     .cart-padding {
-        margin-top: 10em;
+        margin-top: 5em;
     }
 
     .my-own-width-tab {
