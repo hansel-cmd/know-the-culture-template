@@ -16,24 +16,6 @@
     <link rel="stylesheet" href="assets/css1/override.css">
     <title>Know The Culture | About</title>
 
-    <!-- <SCRIPT language=JavaScript>
-        
-        var message = "";
-        
-        function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 
-            alert(message);
-            return false; 
-        }
-        
-        if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 
-            alert(message);
-            return false; } 
-        }
-        
-        document.onmousedown = rtclickcheck;
-        
-    </SCRIPT> -->
-
 </head>
 
 <body>
@@ -116,53 +98,76 @@
     </nav>
 
     <!-- Know our brand -->
-    <section class="p-5">
+    <section class="py-5 pt-2 p-sm-5">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md pt-3 pt-lg-0 py-lg-5">
-                    <img class="img-fluid" src="assets/images/know our brand.jpg" class="img-fluid" alt="" />
+                <div class="col-xl pt-3 pt-lg-0 d-flex align-items-center ">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active " data-bs-interval="2000">
+                                <img class="img-fluid" src="assets/images/know our brand.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img class="img-fluid" src="assets/images/know our brand.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img class="img-fluid" src="assets/images/know our brand.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md pt-3 pt-lg-0 p-lg-5">
+                <div class="col-xl pt-3 pt-lg-0 ">
                     <h1 class="text-secondary">How it started.</h1>
-                    <p class="text-justify">
+                    <p class="text-justify fs-6">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Similique deleniti possimus magnam corporis ratione facere!
                     </p>
-                    <p class="text-justify">
+                    <p class="text-justify fs-6">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
                         reiciendis eius autem eveniet mollitia, at asperiores suscipit
                         quae similique laboriosam iste minus placeat odit velit quos,
                         nulla architecto amet voluptates?
                     </p>
-                    <p class="text-justify">
+                    <p class="text-justify fs-6">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dolorem
                         dignissimos reprehenderit nesciunt ipsam quas numquam fugit nostrum illum quasi eos ea
                         architecto! Nostrum, voluptates!
                     </p>
-                    <p class="text-justify">
+                    <p class="text-justify fs-6">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem expedita ipsam
                         inventore pariatur voluptatum alias sapiente libero labore quo. Modi eaque, temporibus provident
                         nihil ab officiis excepturi vitae cupiditate rem obcaecati dignissimos libero autem ducimus
                         ratione molestiae laboriosam explicabo.
                     </p>
-                    <p class="text-justify">
+                    <p class="text-justify fs-6">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam animi numquam assumenda totam
                         natus debitis ad ipsum dolore recusandae, hic dicta sunt accusantium asperiores qui cum id
                         ducimus voluptatem, placeat quaerat nulla! Sit, porro vitae?
                     </p>
                 </div>
             </div>
+           
         </div>
     </section>
 
     <!-- Contact Us -->
-    <section class="p-5 bg-light-300">
+    <section class="p-0 py-5 p-sm-5 bg-light-300">
         <div class="container">
             <div class="row">
                 <div class="col-lg me-4">
-                    <h1 class="text-secondary">Contact us now!</h1>
+                    <h1 class="text-secondary text-center" style="font-size: 3rem;">Contact us now!</h1>
                     <form>
-                        <div class="row py-2">
+                        <div class="row pt-2">
                             <div class="col">
                                 <label for="firstName" class="form-label text-secondary">First Name</label>
                                 <input type="text" class="form-control" aria-label="First name">
@@ -172,13 +177,13 @@
                                 <input type="text" class="form-control" aria-label="Last name">
                             </div>
                         </div>
-                        <div class="row py-2">
+                        <div class="row pt-2">
                             <div class="col">
                                 <label for="email" class="form-label text-secondary">Email Address</label>
                                 <input type="text" class="form-control" id="inputAddress">
                             </div>
                         </div>
-                        <div class="row py-2">
+                        <div class="row pt-2">
                             <div class="col">
                                 <label for="concern" class="form-label text-secondary">Your Concern</label>
                                 <textarea class="form-control" id="floatingTextarea2"
@@ -186,9 +191,9 @@
                             </div>
                         </div>
                         <div class="row pt-2">
-                            <div class="non-special justify-content-between mb-4">
+                            <div class="col non-special justify-content-between mb-4">
                                 <button
-                                    class="btn bg-dark-200 btn-lg py-sm-3 py-lg-2 text-light-200 text-secondary px-5 hover-towards-light">
+                                    class="btn bg-dark-200 btn-lg py-sm-3 py-lg-2 text-light-200 text-secondary px-5 hover-towards-light fs-6 w-100 p-0">
                                     Send Message
                                 </button>
                             </div>
@@ -196,43 +201,48 @@
                     </form>
                 </div>
 
-                <div class="col-lg ps-4">
-                    <h1 class="text-secondary text-start text-md-center text-lg-end">Get in touch with us.</h1>
-                    <p class="text-start text-lg-center text-md-center mb-4">Want to get in touch? We'd love to hear
-                        from you.</p>
-                    <div class="row mt-4 pt-4">
-                        <div class="col d-flex align-items-center justify-content-lg-center justify-content-md-center">
-                            <h1 class="me-4">
-                                <i class="bi bi-geo-alt-fill"></i>
-                            </h1>
-                            <span class="h2 text-secondary" style="max-width: 20rem;">Someplace at Sometime, Cebu City
-                                6000</span>
-                        </div>
+                <div class="col-lg ps-4 justify-content-between">
+                    <div class="pb-sm-2">
+                        <h1 class="text-secondary text-center" style="font-size: 3rem;">Get in touch with us.</h1>
+                        <p class="text-start text-lg-center text-md-center mb-4 fs-6">Want to get in touch? We'd love to
+                            hear from you.</p>
                     </div>
-                    <div class="row">
-                        <div
-                            class="col d-flex align-items-center justify-content-start justify-content-lg-center justify-content-md-center">
-                            <h1 class="me-4">
-                                <i class="bi bi-facebook"></i>
-                            </h1>
-                            <span class="h3 text-secondary text-wrap" style="max-width: 20rem; width: 20rem;"><a
-                                    href="https://www.facebook.com/knowthecultureph"
-                                    target="_blank">@knowthecultureph</a></span>
+                    <div>
+                        <div class="row pt-4" style="border-bottom: 2px solid black; max-width: 30rem; margin: 0 auto;"></div>
+                        <div class="row pt-4">
+                            <div
+                                class="col d-flex align-items-center justify-content-center justify-content-lg-center justify-content-md-center">
+                                <h1 class="me-4 fs-1">
+                                    <i class="bi bi-facebook"></i>
+                                </h1>
+                                <span class="h4 text-secondary text-wrap" style="max-width: 20rem; width: 20rem;"><a
+                                        href="https://www.facebook.com/knowthecultureph"
+                                        target="_blank">@knowthecultureph</a></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div
-                            class="col d-flex align-items-center justify-content-start justify-content-md-center justify-content-lg-center">
-                            <h1 class="me-4">
-                                <i class="bi bi-instagram"></i>
-                            </h1>
-                            <span class="h3 text-secondary" style="max-width: 20rem; width: 20rem;"><a
-                                    href="https://www.instagram.com/knowthecultureph"
-                                    target="_blank">@knowthecultureph</a>
+                        <div class="row">
+                            <div
+                                class="col d-flex align-items-center justify-content-center justify-content-md-center justify-content-lg-center">
+                                <h1 class="me-4 fs-1">
+                                    <i class="bi bi-instagram"></i>
+                                </h1>
+                                <span class="h4 text-secondary" style="max-width: 20rem; width: 20rem;"><a
+                                        href="https://www.instagram.com/knowthecultureph"
+                                        target="_blank">@knowthecultureph</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row" style="border-bottom: 2px solid black; max-width: 30rem; margin: 0 auto;">
-
+                        <div class="row">
+                            <div
+                                class="col d-flex align-items-center justify-content-center justify-content-md-center justify-content-lg-center">
+                                <h1 class="me-4 fs-1">
+                                    <i class="bi bi-twitter"></i>
+                                </h1>
+                                <span class="h4 text-secondary" style="max-width: 20rem; width: 20rem;"><a
+                                        href="https://twitter.com/knwthcltrph" target="_blank">@knwthcltrph</a>
+                            </div>
+                        </div>
+                        <div class="row pt-4" style="border-bottom: 2px solid black; max-width: 30rem; margin: 0 auto;">
+                        </div>
                     </div>
 
                 </div>
@@ -241,7 +251,7 @@
     </section>
 
     <!-- Faq -->
-    <section id="faq" class="p-5">
+    <section id="faq" class="py-5 p-xl-5">
         <div class="container">
             <h2 class="text-secondary text-center">Frequently Asked Questions</h2>
             <div class="accordion accordion-flush py-4" id="accordions">
@@ -338,11 +348,11 @@
                 <div class="col-md-4 col-lg-2 text-center">
                     <div>
                         <img class="img-fluid footer-logo" src="assets/images/circle logo 181818.png"
-                                alt="know the culture logo" >
+                            alt="know the culture logo">
                     </div>
                     <p class="text-secondary text-light-500 fs-6 pb-0 mb-0">Know The Culture.</p>
                     <p class="text-secondary text-light-700 fs-6">All Rights Reserved.</p>
-                    
+
                 </div>
                 <div class="col-md-1 col-lg-2">
 
@@ -353,7 +363,8 @@
                         <ul class="list-unstyled text-light-500 fs-5">
                             <li><a href="index.html" class="text-decoration-none text-light-500">Home</a></li>
                             <li><a href="shop.html" class="text-decoration-none text-light-500">Shop</a></li>
-                            <li><a href="collection.html" class="text-decoration-none text-light-500">Collections</a></li>
+                            <li><a href="collection.html" class="text-decoration-none text-light-500">Collections</a>
+                            </li>
                             <li><a href="about.html" class="text-decoration-none text-light-500">About Us</a></li>
                         </ul>
                         <ul class="list-unstyled text-light-500 fs-5 text-start">
@@ -367,11 +378,17 @@
 
                 </div>
                 <div class="col-sm-5 col-md-12 col-lg-3">
-                    <h4 class="footer-p nav-link text-light-500 text-secondary ps-0 fs-5 text-lg-end text-center">Connect with us.</h4>
+                    <h4 class="footer-p nav-link text-light-500 text-secondary ps-0 fs-5 text-lg-end text-center">
+                        Connect with us.</h4>
                     <div class="d-flex justify-content-lg-end justify-content-center">
-                        <a class="nav-link text-light-500 text-secondary footer-p" href="https://www.facebook.com/knowthecultureph" target="_blank"><span><i class="bi bi-facebook"></i></span></a>
-                        <a class="nav-link text-light-500 text-secondary footer-p" href="https://www.instagram.com/knowthecultureph" target="_blank"><span><i class="bi bi-instagram"></i></span></a>
-                        <a class="nav-link text-light-500 text-secondary footer-p" href="https://twitter.com/knwthcltrph"><i class="bi bi-twitter"></i></span></a>
+                        <a class="nav-link text-light-500 text-secondary footer-p"
+                            href="https://www.facebook.com/knowthecultureph" target="_blank"><span><i
+                                    class="bi bi-facebook"></i></span></a>
+                        <a class="nav-link text-light-500 text-secondary footer-p"
+                            href="https://www.instagram.com/knowthecultureph" target="_blank"><span><i
+                                    class="bi bi-instagram"></i></span></a>
+                        <a class="nav-link text-light-500 text-secondary footer-p"
+                            href="https://twitter.com/knwthcltrph"><i class="bi bi-twitter"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -379,45 +396,6 @@
     </footer>
 
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-        document.onkeydown = function(e) {
-                if (e.ctrlKey && 
-                    (e.keyCode === 67 || 
-                     e.keyCode === 86 || 
-                     e.keyCode === 85 || 
-                     e.keyCode === 117)) {
-                    return false;
-                } else {
-                    return true;
-                }
-        };
-        $(document).keypress("u",function(e) {
-          if(e.ctrlKey)
-          {
-        return false;
-        }
-        else
-        {
-        return true;
-        }
-        });
-        </script>
-        
-        
-        <script type="text/javascript">
-            window.oncontextmenu = function () {
-                return false;
-            }
-            $(document).keydown(function (event) {
-                if (event.keyCode == 123) {
-                    return false;
-                }
-                else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
-                    return false;
-                }
-            });
-        </script> -->
 </body>
 
 </html>

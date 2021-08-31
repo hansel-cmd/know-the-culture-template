@@ -1,3 +1,11 @@
+html {
+    font-size: 14.5px;   
+}
+
+body {
+    font-size: 14.5px;
+}
+
 body::before {
     display: block;
     content: '';
@@ -49,7 +57,7 @@ body::before {
 }
 
 .text-primary {
-    font-family:  'Lato', sans-serif !important;
+    font-family:  'Arial', sans-serif !important;
 }
 
 .text-secondary {
@@ -222,9 +230,9 @@ footer {
     max-width: 39.125rem;
 }
 
-h1 {
+/* h1 {
     font-size: 3rem;
-}
+} */
 
 .special {
     display: block;
@@ -237,8 +245,7 @@ h1 {
 }
 
 .non-special .btn {
-    width: 100%;
-    margin: 2px;
+    width: auto;
 }
 
 .navbar-toggler:focus,
@@ -532,7 +539,6 @@ input[type="checkbox"]:checked {
 
     .non-special .btn {
         width: auto;
-        margin: 2px;
     }
 
     .my-flex-landing-shop {
@@ -597,9 +603,9 @@ input[type="checkbox"]:checked {
 
 /* medium */
 @media (min-width: 768px) {
-    h1 {
+    /* h1 {
         font-size: 3.563rem;
-    }
+    } */
 
     .showcase-landing {
         max-width: 100%;
@@ -715,10 +721,9 @@ input[type="checkbox"]:checked {
 
 /* large */
 @media (min-width: 992px) {
-    h1 {
-        /* font-size: 5.563rem; */
+    /* h1 {
         font-size: 4.563rem;
-    }
+    } */
 
     .my-container {
         margin: 0 auto;
