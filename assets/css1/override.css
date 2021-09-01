@@ -336,6 +336,7 @@ footer {
 .hide-scroll::-webkit-scrollbar{
     scroll-behavior: smooth;
     height: 5px;
+    width: 5px;
 }
 
 .hide-scroll::-webkit-scrollbar-thumb {
