@@ -526,6 +526,10 @@ input[type="checkbox"]:checked {
     min-height: 50vh;
 }
 
+.qty {
+    flex: 0 1 10% !important;
+}
+
 
 /* small */
 @media (min-width: 576px) {
@@ -612,6 +616,10 @@ input[type="checkbox"]:checked {
     
     .select-width {
         width: 20%;
+    }
+
+    .qty {
+        flex: 0 1 5% !important;
     }
     
 }
@@ -759,6 +767,10 @@ input[type="checkbox"]:checked {
     .thumbnail img {
         height: 6em !important;
         width: 5.5em !important;
+    }
+
+    .qty {
+        flex: 0 1 15% !important;
     }
 }
 
@@ -925,6 +937,10 @@ input[type="checkbox"]:checked {
     .thumbnail img {
         height: 5.75em !important;
         width: 5.05em !important;
+    }
+
+    .qty {
+        flex: 0 1 30% !important;
     }
 }
 
