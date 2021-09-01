@@ -187,13 +187,13 @@
                         <label for="size" class="form-label text-secondary text-dark-200">Quantity:</label>
                         <div class="input-group mb-3 w-100 flex-grow-1 justify-content-start align-items-center">
                             <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled"
-                                style="flex: 0 1 auto;" type="button" id="reduce-item-1"
+                                style="flex: 0 1 auto; padding-top: 0.063rem; padding-bottom: 0.063rem;" type="button" id="reduce-item-1"
                                 onclick="reduceQty(this, 'item-1')">-</button>
-                            <input id="item-1" type="text" class="form-control text-center px-0 qty"
+                            <input id="item-1" type="text" class="form-control text-center px-0 qty" style="padding-top: 0.063rem; padding-bottom: 0.063rem;"
                                 aria-describedby="" value="1" max="20" min="1"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');"
                                 onchange="checkQty(this, 'reduce-item-1', 'add-item-1')">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto; padding-top: 0.063rem; padding-bottom: 0.063rem;"
                                 type="button" id="add-item-1" onclick="increaseQty(this, 'item-1')">+</button>
                         </div>
                     </div>
