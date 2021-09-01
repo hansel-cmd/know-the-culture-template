@@ -278,14 +278,14 @@ footer {
 /* my-grid is for collection */
 .my-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
 }
 
 .my-grid-when-clicked {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr) !important;
     grid-template-rows: repeat(2, 1fr) !important;
     grid-gap: 0.5rem;
 }
@@ -329,13 +329,21 @@ footer {
 
 .hide-scroll {
     overflow: auto !important; 
-    scrollbar-width: 0 !important; 
+    scrollbar-width: 2 !important;  
     -webkit-overflow-scrolling: touch !important;
 }
 
 .hide-scroll::-webkit-scrollbar{
-    display: none;
     scroll-behavior: smooth;
+    height: 5px;
+}
+
+.hide-scroll::-webkit-scrollbar-thumb {
+    background: #2F2F2F; 
+}
+
+.hide-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; 
 }
 
 .image-changer {
@@ -375,7 +383,7 @@ footer {
 }
 
 .enlarge-effect img:hover, .ease-out-effect:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .accordion-button:not(.collapsed) {
@@ -405,7 +413,7 @@ input[type="checkbox"]:checked {
 
 .select-width {
     flex-grow: 0 !important;
-    width: 100%;
+    width: 25%;
 }
 
 .select-qty {
@@ -436,7 +444,6 @@ input[type="checkbox"]:checked {
 .current-tab {
     color: #c7c7c7;
 }
-
 
 .dropdown-toggle::after {
     transform: rotate(270deg);
@@ -495,6 +502,34 @@ input[type="checkbox"]:checked {
     transform: translate(50%, 50%);
     pointer-events: none;
 }
+
+.thumbnail img {
+    height: 5.025em !important;
+    width: 4.75em !important;
+}
+
+.product-left-container {
+    max-height: 100vh;
+    flex-basis: 70%;
+    box-sizing: border-box;
+}
+
+.product-right-container {
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    box-sizing: border-box;
+}
+
+.slider-image {
+    object-fit: contain;
+    max-height: 50vh;
+    min-height: 50vh;
+}
+
+.qty {
+    flex: 0 1 10% !important;
+}
+
 
 /* small */
 @media (min-width: 576px) {
@@ -558,7 +593,7 @@ input[type="checkbox"]:checked {
 
     .my-grid-when-clicked {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
         grid-template-rows: repeat(2, 1fr) !important;
         grid-gap: 0.5rem;
     }
@@ -580,8 +615,13 @@ input[type="checkbox"]:checked {
     }
     
     .select-width {
-        width: 100%;
+        width: 20%;
     }
+
+    .qty {
+        flex: 0 1 5% !important;
+    }
+    
 }
 
 /* medium */
@@ -633,7 +673,7 @@ input[type="checkbox"]:checked {
 
     .my-grid {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -661,7 +701,7 @@ input[type="checkbox"]:checked {
 
     .my-grid-when-clicked {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-columns: repeat(3, 1fr) !important;
         grid-template-rows: repeat(2, 1fr) !important;
         grid-gap: 0.5rem;
     }
@@ -683,7 +723,7 @@ input[type="checkbox"]:checked {
     }
 
     .select-width {
-        width: 100%;
+        width: 45%;
     }
 
     .cart-select-width {
@@ -698,6 +738,39 @@ input[type="checkbox"]:checked {
     .footer-logo {
         width: 100% !important;
         height: 75% !important;
+    }
+
+    .parent-container {
+        max-height: 65vh;
+        min-height: 70vh;
+    }
+
+    .slider-image {
+        object-fit: contain;
+        max-height: 70vh;
+        min-height: 70vh;
+    }
+    
+    .product-left-container {
+        max-height: 70vh;
+        min-height: 50vh;
+        flex-basis: 70%; 
+        box-sizing: border-box;
+    }
+
+    .product-right-container {
+        overflow-y: auto; 
+        overflow-x: hidden; 
+        box-sizing: border-box;
+    }
+
+    .thumbnail img {
+        height: 6em !important;
+        width: 5.5em !important;
+    }
+
+    .qty {
+        flex: 0 1 15% !important;
     }
 }
 
@@ -796,7 +869,7 @@ input[type="checkbox"]:checked {
     }
 
     .select-width {
-        width: 50%;
+        width: 35%;
     }
 
     .select-qty {
@@ -836,6 +909,38 @@ input[type="checkbox"]:checked {
 
     .my-own-width-tab {
         width: 60%;
+    }
+
+    .parent-container {
+        max-height: 65vh;
+        min-height: 70vh;
+    }
+
+    .slider-image {
+        object-fit: contain;
+        max-height: 70vh;
+        min-height: 70vh;
+    }
+    
+    .product-left-container {
+        max-height: 90vh; 
+        flex-basis: 70%; 
+        box-sizing: border-box;
+    }
+
+    .product-right-container {
+        overflow-y: auto; 
+        overflow-x: hidden; 
+        box-sizing: border-box;
+    }
+
+    .thumbnail img {
+        height: 5.75em !important;
+        width: 5.05em !important;
+    }
+
+    .qty {
+        flex: 0 1 30% !important;
     }
 }
 
@@ -882,9 +987,9 @@ input[type="checkbox"]:checked {
 
     .my-grid {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 1.5rem;
+        grid-gap: 0.5rem;
     }
 
     .shop-grid {
@@ -918,7 +1023,8 @@ input[type="checkbox"]:checked {
     }
 
     .select-width {
-        width: 25%;
+        width: 31%;
+        padding: 0.0875rem 0rem 0.0875rem 0.75rem;
     }
 
     .select-qty {
@@ -953,6 +1059,29 @@ input[type="checkbox"]:checked {
 
     .my-own-width-tab {
         width: 40%;
+    }
+
+    .parent-container {
+        max-height: 100%;
+        min-height: 100%;
+    }
+
+    .slider-image {
+        object-fit: contain;
+        max-height: 90vh;
+        min-height: 70vh;
+    }
+
+    .product-left-container {
+        max-height: 100vh; 
+        flex-basis: 70%; 
+        box-sizing: border-box;
+    }
+
+    .product-right-container {
+        overflow-y: auto; 
+        overflow-x: hidden; 
+        box-sizing: border-box;
     }
 }
 
