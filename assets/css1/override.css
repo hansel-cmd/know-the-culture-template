@@ -413,7 +413,7 @@ input[type="checkbox"]:checked {
 
 .select-width {
     flex-grow: 0 !important;
-    width: 100%;
+    width: 25%;
 }
 
 .select-qty {
@@ -611,7 +611,7 @@ input[type="checkbox"]:checked {
     }
     
     .select-width {
-        width: 100%;
+        width: 20%;
     }
     
 }
@@ -715,7 +715,7 @@ input[type="checkbox"]:checked {
     }
 
     .select-width {
-        width: 100%;
+        width: 45%;
     }
 
     .cart-select-width {
@@ -857,7 +857,7 @@ input[type="checkbox"]:checked {
     }
 
     .select-width {
-        width: 50%;
+        width: 35%;
     }
 
     .select-qty {
@@ -1007,7 +1007,8 @@ input[type="checkbox"]:checked {
     }
 
     .select-width {
-        width: 25%;
+        width: 31%;
+        padding: 0.0875rem 0rem 0.0875rem 0.75rem;
     }
 
     .select-qty {

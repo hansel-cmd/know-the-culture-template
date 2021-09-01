@@ -29,7 +29,7 @@
                 <div class="d-flex col-5 col-sm-6 col-lg-4 justify-content-center">
                     <ul class="navbar-nav mb-2 mb-lg-0 mt-1">
                         <li class="nav-item ms-4 active">
-                            <a class="nav-link" href="#">Shop</a>
+                            <a class="nav-link" href="shop.html">Shop</a>
                         </li>
                         <li class="nav-item mx-4">
                             <a class="nav-link" href="collection.html">Collections</a>
@@ -77,7 +77,7 @@
                         <a class="nav-link" href="collection.html">Collections</a>
                     </li>
                     <li class="nav-item mx-4 active">
-                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item mx-4">
                         <a class="nav-link" href="about.html">About</a>
@@ -98,7 +98,7 @@
     <!-- Shop Items -->
     <section class="p-md-5 px-md-3 pb-0">
         <div class="py-4 position-relative">
-           
+
 
             <div class="d-flex flex-md-row flex-column justify-content-center parent-container">
                 <div class="product-left-container">
@@ -112,13 +112,13 @@
                             </div>
                             <div class="thumbnail">
                                 <img src="assets/images/products/Childhood Dreams Collection S_S 2020/BallMindedB.jpg"
-                                    data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="slide-indicator"
-                                    aria-label="Slide 2" alt="..." data-interval="false">
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    class="slide-indicator" aria-label="Slide 2" alt="..." data-interval="false">
                             </div>
                             <div class="thumbnail">
                                 <img src="assets/images/products/Childhood Dreams Collection S_S 2020/collection (55).jpg"
-                                    data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="slide-indicator"
-                                    aria-label="Slide 3" alt="..." data-interval="false">
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    class="slide-indicator" aria-label="Slide 3" alt="..." data-interval="false">
                             </div>
                         </div>
                         <div class="carousel-inner">
@@ -132,7 +132,7 @@
                             </div>
                             <div class="carousel-item" style="border-bottom: none !important;">
                                 <img src="assets/images/products/Childhood Dreams Collection S_S 2020/collection (55).jpg"
-                                    class="d-block w-100 h-100 my-image slider-image" alt="..." >
+                                    class="d-block w-100 h-100 my-image slider-image" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -149,27 +149,29 @@
 
 
                 </div>
-                <div class="product-right-container pt-3 px-4 ">
-                    
+                <div class="product-right-container pt-3 px-4 border-1 border-start">
+
                     <h3 class="fs-2 text-secondary">
-                        Monogram Fleece Hoodie GRN
+                        Ball Minded Tee | Navy Blue
                     </h3>
-                    <p class="text-light-700">Php 3,999.99</p>
+                    <p class="text-dark-100">Php 799.00</p>
                     <p class="fs-6 text-primary">
                     <ul class="list-unstyled">
-                        <li class="fs-6 text-primary">Lorem</li>
-                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
-                        <li class="fs-6 text-primary">Lorem Ipsum</li>
-                        <li class="fs-6 text-primary">Lorem, ipsum dolor.</li>
-                        <li class="fs-6 text-primary">Lorem ipsum dolor sit.</li>
+                        <li class="fs-6 text-primary">- Premium Crewneck T-Shirt</li>
+                        <li class="fs-6 text-primary">- Ribbed Collar</li>
+                        <li class="fs-6 text-primary">- Cut & Sew</li>
+                        <li class="fs-6 text-primary">- Custom KTC Woven Tag</li>
                     </ul>
                     </p>
 
+                    <!-- Size Guide -->
+                    <a href="#size_guide" class="text-secondary text-dark fs-5" data-bs-toggle="modal"
+                        title="View Product Size Guide">Size Guide</a>
+
                     <!-- SIZING -->
-                    <div>
+                    <div class="pt-2">
                         <label for="size" class="form-label text-secondary text-dark-200">Select Size:</label>
-                        <select id="size" class="form-select mb-3  select-width"
+                        <select id="size" class="form-select mb-3 text-secondary fs-6 select-width"
                             aria-label=".form-select-lg example">
                             <option selected>XX-SMALL</option>
                             <option value="1">X-SMALL</option>
@@ -180,97 +182,86 @@
                         </select>
                     </div>
 
-                    <!-- QUANTITY -->
-                    <div>
+                    <!-- Qty -->
+                    <div class="col-lg-4">
                         <label for="size" class="form-label text-secondary text-dark-200">Quantity:</label>
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3 w-100 flex-grow-1 justify-content-start align-items-center">
                             <button class="btn btn-outline-secondary bg-dark-200 text-light-200 disabled"
-                                type="button" id="reduce-item-1" onclick="reduceQty(this, 'item-1')">-</button>
-                            <!-- Always change the max to the maximum qty of the item -->
-                            <input id="item-1" type="text" class="form-control text-center select-qty"
+                                style="flex: 0 1 auto;" type="button" id="reduce-item-1"
+                                onclick="reduceQty(this, 'item-1')">-</button>
+                            <input id="item-1" type="text" class="form-control text-center px-0" style="flex: 0 1 30%;"
                                 aria-describedby="" value="1" max="20" min="1"
                                 oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');"
                                 onchange="checkQty(this, 'reduce-item-1', 'add-item-1')">
-                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" type="button"
-                                id="add-item-1" onclick="increaseQty(this, 'item-1')">+</button>
+                            <button class="btn btn-outline-secondary bg-dark-200 text-light-200" style="flex: 0 1 auto;"
+                                type="button" id="add-item-1" onclick="increaseQty(this, 'item-1')">+</button>
                         </div>
                     </div>
-
-
-                    <!-- PRODUCT SIZING DETAIL -->
-                    <div>
-                        <div class="accordion accordion-flush pb-4" id="product_sizing">
-                            <div class="accordion-item border-bottom mb-4">
-                                <h2 class="accordion-header" id="product_sizing_button">
-                                    <button class="accordion-button collapsed text-secondary" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#product_sizing_info"
-                                        aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                        Product Sizing
-                                    </button>
-                                </h2>
-                                <div id="product_sizing_info" class="accordion-collapse collapse"
-                                    aria-labelledby="size_panel">
-                                    <div class="border-bottom">
-                                        <div class="py-2 px-4">
-                                            <div class="table-responsive">
-                                                <table class="table text-secondary fs-6">
-                                                    <tr>
-                                                        <td>size (inches)</td>
-                                                        <td>XS</td>
-                                                        <td>S</td>
-                                                        <td>M</td>
-                                                        <td>L</td>
-                                                        <td>XL</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>body length</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>chest</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>sleeve length</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                        <td>24</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
                     <div class="row gap-2 p-3">
-                        <a href=""
-                            class="btn bg-dark-200 text-light-200 p-3 text-secondary hover-towards-light">BUY
+                        <a href="" class="btn bg-dark-200 text-light-200 p-2 text-secondary hover-towards-light">BUY
                             NOW</a>
                         <a href=""
-                            class="btn bg-light-200 text-dark-200 p-3 text-secondary my-outline-dark-200 hover-towards-dark">ADD
+                            class="btn bg-light-200 text-dark-200 p-2 text-secondary my-outline-dark-200 hover-towards-dark">ADD
                             TO CART</a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
 
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="size_guide" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-secondary" id="exampleModalLabel">Product Size Guide</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table text-secondary fs-6">
+                            <tr>
+                                <td>size (inches)</td>
+                                <td>XS</td>
+                                <td>S</td>
+                                <td>M</td>
+                                <td>L</td>
+                                <td>XL</td>
+                            </tr>
+                            <tr>
+                                <td>body length</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>chest</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>sleeve length</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                                <td>24</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <footer>
