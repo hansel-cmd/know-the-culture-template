@@ -278,14 +278,14 @@ footer {
 /* my-grid is for collection */
 .my-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
 }
 
 .my-grid-when-clicked {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr) !important;
     grid-template-rows: repeat(2, 1fr) !important;
     grid-gap: 0.5rem;
 }
@@ -375,7 +375,7 @@ footer {
 }
 
 .enlarge-effect img:hover, .ease-out-effect:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .accordion-button:not(.collapsed) {
@@ -558,7 +558,7 @@ input[type="checkbox"]:checked {
 
     .my-grid-when-clicked {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
         grid-template-rows: repeat(2, 1fr) !important;
         grid-gap: 0.5rem;
     }
@@ -633,7 +633,7 @@ input[type="checkbox"]:checked {
 
     .my-grid {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -661,7 +661,7 @@ input[type="checkbox"]:checked {
 
     .my-grid-when-clicked {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-columns: repeat(3, 1fr) !important;
         grid-template-rows: repeat(2, 1fr) !important;
         grid-gap: 0.5rem;
     }
@@ -882,9 +882,9 @@ input[type="checkbox"]:checked {
 
     .my-grid {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 1.5rem;
+        grid-gap: 0.5rem;
     }
 
     .shop-grid {
