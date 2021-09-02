@@ -43,7 +43,7 @@ body::before {
 .test-font {
     font-family: "Heading Pro Light" !important;
     font-weight: 400;
-    letter-spacing: 1;
+    letter-spacing: 12 !important;
 }
 
 .text-light {
