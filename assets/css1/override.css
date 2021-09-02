@@ -12,6 +12,40 @@ body::before {
     height: 3rem;
 }
 
+@font-face {
+    font-family: "Heading Pro Light";
+    src: url("../fonts/Heading-Pro-Light-trial.ttf");
+}
+@font-face {
+    font-family: "Heading Pro Thin";
+    src: url("../fonts/Heading-Pro-Thin-trial.ttf");
+}
+
+@font-face {
+    font-family: "Heading Pro Light";
+    src: url("../fonts/Heading-Pro-Light-trial.ttf");
+}
+@font-face {
+    font-family: "Heading Pro Thin";
+    src: url("../fonts/Heading-Pro-Thin-trial.ttf");
+}
+@font-face {
+    font-family: "Heading Pro Bold";
+    src: url("../fonts/Heading-Pro-Bold-trial.ttf");
+}
+@font-face {
+    font-family: "Heading Pro Book";
+    src: url("../fonts/Heading-Pro-Book-trial.ttf");
+}
+
+
+
+.test-font {
+    font-family: "Heading Pro Light" !important;
+    font-weight: 400;
+    letter-spacing: 1;
+}
+
 .text-light {
     color: #FFFFFF !important;
 }
@@ -491,17 +525,6 @@ input[type="checkbox"]:checked {
 
 .value-button:hover {
     cursor: pointer;
-}
-
-.out-of-stock {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 0 1rem;
-    position: absolute;
-    top: 5%;
-    right: 50%;
-    transform: translate(50%, 50%);
-    pointer-events: none;
 }
 
 .thumbnail img {
