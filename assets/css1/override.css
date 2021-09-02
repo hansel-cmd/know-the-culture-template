@@ -194,7 +194,7 @@ li {
 }
 
 footer {
-    background: #181818;
+    /* background: #181818; */
 }
 
 .p-landing {
@@ -737,8 +737,11 @@ input[type="checkbox"]:checked {
     }
 
     .footer-logo {
-        width: 100% !important;
-        height: 75% !important;
+        width: 50% !important;
+        height: 50% !important;
+        /* width: 30% !important; */
+        /* object-fit: fill; */
+    /* height: 20% !important; */
     }
 
     .parent-container {
