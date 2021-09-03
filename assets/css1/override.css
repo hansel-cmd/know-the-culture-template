@@ -554,6 +554,35 @@ input[type="checkbox"]:checked {
     flex: 0 1 10% !important;
 }
 
+.custom-modal {
+    position: fixed;
+    z-index: 1031 !important;
+    width: 95%;
+    top: 2em;
+    left: 50%;
+    bottom: 2em;
+    transform: translateX(-50%);
+    background: white;
+    box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.5) !important;
+    overflow-y: auto;
+
+    scrollbar-width: 2 !important;  
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.custom-modal::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    width: 3px;
+}
+
+.custom-modal::-webkit-scrollbar-thumb {
+    background: #2F2F2F; 
+}
+
+.custom-modal::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
 
 /* small */
 @media (min-width: 576px) {
@@ -799,6 +828,22 @@ input[type="checkbox"]:checked {
     .qty {
         flex: 0 1 15% !important;
     }
+
+    .custom-modal {
+        position: fixed;
+        z-index: 1031 !important;
+        width: 90%;
+        top: 2em;
+        left: 50%;
+        bottom: 2em;
+        transform: translateX(-50%);
+        background: white;
+        box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.5) !important;
+        overflow-y: auto;
+    
+        scrollbar-width: 2 !important;  
+        -webkit-overflow-scrolling: touch !important;
+    }
 }
 
 
@@ -969,6 +1014,22 @@ input[type="checkbox"]:checked {
     .qty {
         flex: 0 1 30% !important;
     }
+
+    custom-modal {
+        position: fixed;
+        z-index: 1031 !important;
+        width: 80%;
+        top: 2em;
+        left: 50%;
+        bottom: 2em;
+        transform: translateX(-50%);
+        background: white;
+        box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.5) !important;
+        overflow-y: auto;
+    
+        scrollbar-width: 2 !important;  
+        -webkit-overflow-scrolling: touch !important;
+    }
 }
 
 /* extra large */
@@ -1109,6 +1170,22 @@ input[type="checkbox"]:checked {
         overflow-y: auto; 
         overflow-x: hidden; 
         box-sizing: border-box;
+    }
+
+    custom-modal {
+        position: fixed;
+        z-index: 1031 !important;
+        width: 80%;
+        top: 2em;
+        left: 50%;
+        bottom: 2em;
+        transform: translateX(-50%);
+        background: white;
+        box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.5) !important;
+        overflow-y: auto;
+    
+        scrollbar-width: 2 !important;  
+        -webkit-overflow-scrolling: touch !important;
     }
 }
 
