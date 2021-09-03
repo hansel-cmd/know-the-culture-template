@@ -735,9 +735,9 @@
     </section>
 
     <!-- Shop Item Custom Modal -->
-    <div id="product-item-1" class="custom-modal d-none" onkeyup="closeModal('product-item-1')" tabindex="0">
+    <div id="product-item-1" class="custom-modal d-none" onkeyup="closeModal(this, 'product-item-1')" tabindex="0">
         <div class="p-2" style="position: fixed; top: -100; right: 0; z-index: 1">
-            <button type="button" class="btn-close text-end" data-bs-dismiss="modal" aria-label="Close" onclick="closeModal('product-item-1')"></button>
+            <button type="button" class="btn-close text-end" data-bs-dismiss="modal" aria-label="Close" onclick="closeModal(this, 'product-item-1')"></button>
         </div>
         <div class="py-4 position-relative">
 
@@ -935,6 +935,7 @@
     </footer>
 
     <script>
+
         function changeLayout() {
             let shop_items = document.querySelector('#shop-items');
             let layout_icon = document.querySelector('#layout-icon');
@@ -951,8 +952,11 @@
             }
         }
 
-        function closeModal(id) {
+        function closeModal(event, id) {
 
+            if (window.event.key != "Escape" && window.event.key != undefined)
+                return;
+        
             let parent = document.querySelector(`#${id}`);
             
             if (parent.classList.contains("d-block"))
