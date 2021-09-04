@@ -603,6 +603,11 @@ input[type="checkbox"]:checked {
     transform: rotate(-15deg);
 }
 
+.collection_img {
+    min-height: 90vh;
+    max-height: 90vh;
+}
+
 /* small */
 @media (min-width: 576px) {
     .special .btn {
