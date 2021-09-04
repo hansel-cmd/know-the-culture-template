@@ -583,6 +583,25 @@ input[type="checkbox"]:checked {
     background: #f1f1f1; 
 }
 
+.circle-sold-out {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-50%);
+    border-radius: 50% !important;
+    background-color: rgba(128, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.circle-sold-out p {
+    transform: rotate(-15deg);
+}
 
 /* small */
 @media (min-width: 576px) {
