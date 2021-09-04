@@ -603,9 +603,34 @@ input[type="checkbox"]:checked {
     transform: rotate(-15deg);
 }
 
+.collection_container {
+    overflow: hidden;
+    position: relative;
+    min-height: 90vh;
+    max-height: 90vh;
+}
+
 .collection_img {
     min-height: 90vh;
     max-height: 90vh;
+}
+
+.collection_content {
+    position: absolute;
+    background: linear-gradient(
+        hsl(0 0% 0% / 1),
+        transparent,
+        hsl(0 0% 0% / 1)
+    );
+    transition: filter 250ms ease;
+    filter: opacity(0)
+    
+}
+
+.collection_container:hover .collection_content {
+    filter: opacity(0.9);
+    cursor: pointer;
+    
 }
 
 /* small */
