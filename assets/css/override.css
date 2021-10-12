@@ -94,10 +94,13 @@ body::before {
 
 .text-secondary {
     font-family:  'Ropa Sans', sans-serif !important;
+    /* font-family:  "Heading Pro Light", sans-serif !important; */
+    /* font-family:  "Big Caslon Medium", sans-serif !important; */
+    
 }
 
 .text-accent {
-    font-family: 'Ruda', sans-serif !important;
+    font-family: "Heading Pro Light", sans-serif !important;
 }
 
 .bg-light {
