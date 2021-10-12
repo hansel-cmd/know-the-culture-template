@@ -29,8 +29,14 @@ body::before {
     font-family: "Heading Pro Book";
     src: url("../fonts/Heading-Pro-Book-trial.ttf");
 }
+@font-face {
+    font-family: "Big Caslon Medium";
+    src: url("../fonts/Big-Caslon-Medium.ttf");
+}
 
-
+.faq-font {
+    font-family: "Big Caslon Medium" !important;
+}
 
 .test-font {
     font-family: "Heading Pro Light", Arial, Helvetica, sans-serif !important;
