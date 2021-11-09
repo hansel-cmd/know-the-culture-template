@@ -38,7 +38,7 @@ body::before {
     font-family: "Big Caslon Medium" !important;
 }
 
-.test-font {
+.shop-item-description-font {
     font-family: "Heading Pro Light", Arial, Helvetica, sans-serif !important;
     font-weight: 400;
     letter-spacing: 12 !important;
@@ -94,9 +94,6 @@ body::before {
 
 .text-secondary {
     font-family:  'Ropa Sans', sans-serif !important;
-    /* font-family:  "Heading Pro Light", sans-serif !important; */
-    /* font-family:  "Big Caslon Medium", sans-serif !important; */
-    
 }
 
 .text-accent {
