@@ -38,10 +38,6 @@ body::before {
     font-family: "Big Caslon Medium" !important;
 }
 
-.about-font-size {
-    font-size: 0.9775rem !important;
-}
-
 .shop-item-description-font {
     font-family: "Heading Pro Light", Arial, Helvetica, sans-serif !important;
     font-weight: 400;
@@ -1238,10 +1234,6 @@ input[type="checkbox"]:checked {
     
         scrollbar-width: 2 !important;  
         -webkit-overflow-scrolling: touch !important;
-    }
-
-    .about-image {
-        width: 75%;
     }
 }
 
